@@ -29,11 +29,11 @@ export default function MainComponent({ navigation }) {
         <Title>Netflix Originals</Title>
         <CarouselComponent />
         <Title>Continue Watching</Title>
-        <ContinueWatching />
+        <ContinueWatching navigation={navigation} />
         <Title>Explore by Genres</Title>
-        <GenresComponent />
+        <GenresComponent navigation={navigation} />
         <Title>Trending</Title>
-        <TrendingComponent />
+        <TrendingComponent navigation={navigation} />
       </Body>
     </Container>
   );

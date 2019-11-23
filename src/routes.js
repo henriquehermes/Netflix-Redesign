@@ -5,6 +5,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 import Login from '~/pages/Login/LoginComponent';
 import Main from '~/pages/Main/MainComponent';
 import Profile from '~/pages/Profile/ProfileComponent';
+import Movie from '~/pages/Movie/MovieComponent';
 
 const Navigation = () => {
   function getAppNavigator() {
@@ -23,6 +24,12 @@ const Navigation = () => {
       },
       Login: {
         screen: Login,
+        navigationOptions: () => ({
+          header: null,
+        }),
+      },
+      Movie: {
+        screen: Movie,
         navigationOptions: () => ({
           header: null,
         }),

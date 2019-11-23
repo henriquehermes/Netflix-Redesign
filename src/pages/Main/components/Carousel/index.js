@@ -44,6 +44,7 @@ const renderItem = () => {
 
 export default function CarouselComponent() {
   const [activeSlide, setActiveSlide] = useState(0);
+
   return (
     <>
       <Carousel

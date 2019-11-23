@@ -11,6 +11,7 @@ const theme = {
   background: '#111111',
   backgroundSecondary: 'rgba(255,255,255,0.1)',
   inputBackground: '#1C1C1C',
+  highlight: '#1ABD32',
 };
 
 const App = () => (

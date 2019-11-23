@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
 
-export const Slide = styled.View`
+export const Slide = styled.TouchableOpacity`
   width: 180px;
   height: 108px;
   border-radius: 4px;

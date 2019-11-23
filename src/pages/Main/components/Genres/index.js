@@ -19,19 +19,18 @@ const DATA = [
   },
 ];
 
-const renderItem = ({ item, index }) => {
-  return (
-    <Slide firstIndex={index === 0} lastIndex={index === 3}>
-      <Button label={item.name} />
-    </Slide>
-  );
-};
-
-export default function GenresComponent() {
+export default function GenresComponent({ navigation }) {
   return (
     <FlatList
       data={DATA}
-      renderItem={renderItem}
+      renderItem={({ item, index }) => (
+        <Slide firstIndex={index === 0} lastIndex={index === 3} key={index}>
+          <Button
+            label={item.name}
+            onPress={() => navigation.navigate('Movie')}
+          />
+        </Slide>
+      )}
       horizontal
       showsHorizontalScrollIndicator={false}
       overScrollMode="never"
