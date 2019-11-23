@@ -15,14 +15,14 @@ import ContinueWatching from './components/ContinueWatching';
 import TrendingComponent from './components/Trending';
 import GenresComponent from './components/Genres';
 
-export default function MainComponent() {
+export default function MainComponent({ navigation }) {
   return (
     <Container>
       <Header>
-        <Logout />
+        <Logout onPress={() => navigation.navigate('Login')} />
         <Netflix />
         <View style={{ flex: 1, alignItems: 'flex-end' }}>
-          <UserProfile />
+          <UserProfile onPress={() => navigation.navigate('Profile')} />
         </View>
       </Header>
       <Body overScrollMode="never">

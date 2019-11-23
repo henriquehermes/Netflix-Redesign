@@ -4,18 +4,25 @@ import { createStackNavigator } from 'react-navigation-stack';
 
 import Login from '~/pages/Login/LoginComponent';
 import Main from '~/pages/Main/MainComponent';
+import Profile from '~/pages/Profile/ProfileComponent';
 
 const Navigation = () => {
   function getAppNavigator() {
     return createStackNavigator({
-      Login: {
-        screen: Login,
+      Main: {
+        screen: Main,
         navigationOptions: () => ({
           header: null,
         }),
       },
-      Main: {
-        screen: Main,
+      Profile: {
+        screen: Profile,
+        navigationOptions: () => ({
+          header: null,
+        }),
+      },
+      Login: {
+        screen: Login,
         navigationOptions: () => ({
           header: null,
         }),
