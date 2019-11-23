@@ -1,0 +1,18 @@
+image: reactnativecommunity/react-native-android
+before_script:
+  - npm i -g envinfo && envinfo
+
+stages:
+  - build_android
+
+build:android:
+  stage: build_android
+  script:
+    - yarn install
+    - cd android && chmod +x gradlew
+    - ./gradlew assembleRelease
+  only:
+    - master
+  artifacts:
+    paths:
+      - android/app/build/outputs/

@@ -1,0 +1,10 @@
+{
+  "users": [
+    {
+      "name": "Teste",
+      "email": "tete",
+      "picture": "www",
+      "movieList": []
+    }
+  ]
+}
