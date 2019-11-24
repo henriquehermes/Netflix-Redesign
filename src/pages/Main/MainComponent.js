@@ -51,7 +51,7 @@ export default function MainComponent({
           <Title>Netflix Originals</Title>
           <ButtonView
             onPress={() =>
-              openCategory('Netflix Originals', NETFLIX_ORIGINALS.originals)
+              openCategory('Netflix Originals', NETFLIX_ORIGINALS)
             }>
             <ButtonText>VIEW ALL</ButtonText>
           </ButtonView>

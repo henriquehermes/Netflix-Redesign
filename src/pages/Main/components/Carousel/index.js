@@ -38,7 +38,7 @@ export default function CarouselComponent({ data }) {
   return (
     <>
       <Carousel
-        data={data.originals}
+        data={data}
         autoplay
         loop
         keyExtractor={item => item.id}
@@ -48,7 +48,7 @@ export default function CarouselComponent({ data }) {
         onSnapToItem={index => setActiveSlide(index)}
       />
       <Pagination
-        dotsLength={data.originals.length}
+        dotsLength={data.length}
         activeDotIndex={activeSlide}
         containerStyle={{
           height: 15,

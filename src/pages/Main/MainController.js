@@ -1,29 +1,61 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
 
 import MainComponent from './MainComponent';
-
-import NETFLIX_ORIGINALS from '~/config/netflix_originals.json';
-import TRENDING from '~/config/trending.json';
-import CONTINUE_WATCHING from '~/config/continue_watching.json';
-import GENRES from '~/config/genres.json';
-import BRAZIL_MOVIES from '~/config/brazil.json';
-import USA_MOVIES from '~/config/usa.json';
+import {
+  getNetflix,
+  getTrending,
+  getContinueWatching,
+  getGenres,
+  getBrazilMovies,
+  getUsaMovies,
+} from '~/services/MovieServices';
 
 export default function MainController({ navigation }) {
+  const [Netflix, setNetflix] = useState([]);
+  const [Trending, setTrending] = useState([]);
+  const [ContinueWatching, setContinueWatching] = useState([]);
+  const [Genres, setGenres] = useState([]);
+  const [BrazilMovies, setBrazilMovies] = useState([]);
+  const [UsaMovies, setUsaMovies] = useState([]);
+
   async function logoff() {
     await AsyncStorage.removeItem('User');
     navigation.navigate('AuthNavigator');
   }
 
+  async function MainData() {
+    const netflix = await getNetflix();
+    setNetflix(netflix);
+
+    const trending = await getTrending();
+    setTrending(trending);
+
+    const continueW = await getContinueWatching();
+    setContinueWatching(continueW);
+
+    const genres = await getGenres();
+    setGenres(genres);
+
+    const brazil = await getBrazilMovies();
+    setBrazilMovies(brazil);
+
+    const usa = await getUsaMovies();
+    setUsaMovies(usa);
+  }
+
+  useEffect(() => {
+    MainData();
+  }, []);
+
   return (
     <MainComponent
-      NETFLIX_ORIGINALS={NETFLIX_ORIGINALS}
-      TRENDING={TRENDING}
-      CONTINUE_WATCHING={CONTINUE_WATCHING}
-      GENRES={GENRES}
-      BRAZIL_MOVIES={BRAZIL_MOVIES}
-      USA_MOVIES={USA_MOVIES}
+      NETFLIX_ORIGINALS={Netflix}
+      TRENDING={Trending}
+      CONTINUE_WATCHING={ContinueWatching}
+      GENRES={Genres}
+      BRAZIL_MOVIES={BrazilMovies}
+      USA_MOVIES={UsaMovies}
       navigation={navigation}
       logoff={logoff}
     />

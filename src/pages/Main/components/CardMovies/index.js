@@ -22,13 +22,13 @@ export default function CardMovies({ data, navigation }) {
 
   return (
     <FlatList
-      data={data.watching}
+      data={data}
       keyExtractor={item => item.trailerURL}
       renderItem={({ item, index }) => (
         <Slide
           onPress={() => openDetail(item)}
           firstIndex={index === 0}
-          lastIndex={index === data.watching.length - 1}>
+          lastIndex={index === data.length - 1}>
           <MovieImage
             source={{
               uri: item.Poster,

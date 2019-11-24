@@ -56,11 +56,9 @@ export default function GenresComponent({ navigation, data }) {
 
   return (
     <FlatList
-      data={data.list}
+      data={data}
       renderItem={({ item, index }) => (
-        <Slide
-          firstIndex={index === 0}
-          lastIndex={index === data.list.length - 1}>
+        <Slide firstIndex={index === 0} lastIndex={index === data.length - 1}>
           <Button label={item.type} onPress={() => openCategory(item.type)} />
         </Slide>
       )}

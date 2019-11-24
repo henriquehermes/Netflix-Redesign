@@ -16,11 +16,11 @@ export default function TrendingComponent({ data, navigation }) {
 
   return (
     <FlatList
-      data={data.trending}
+      data={data}
       renderItem={({ index, item }) => (
         <Slide
           firstIndex={index === 0}
-          lastIndex={index === data.trending.length - 1}
+          lastIndex={index === data.length - 1}
           onPress={() => openDetail(item)}>
           <MovieImage
             source={{
