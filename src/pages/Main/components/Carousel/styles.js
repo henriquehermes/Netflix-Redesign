@@ -31,6 +31,7 @@ export const Description = styled.View`
 
 export const MovieType = styled.Text`
   color: ${props => props.theme.primary};
+  text-transform: capitalize;
   font-size: 10px;
 `;
 

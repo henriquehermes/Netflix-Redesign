@@ -15,7 +15,12 @@ import ContinueWatching from './components/ContinueWatching';
 import TrendingComponent from './components/Trending';
 import GenresComponent from './components/Genres';
 
-export default function MainComponent({ navigation }) {
+export default function MainComponent({
+  NETFLIX_ORIGINALS,
+  TRENDING,
+  CONTINUE_WATCHING,
+  navigation,
+}) {
   return (
     <Container>
       <Header>
@@ -27,13 +32,13 @@ export default function MainComponent({ navigation }) {
       </Header>
       <Body overScrollMode="never">
         <Title>Netflix Originals</Title>
-        <CarouselComponent />
+        <CarouselComponent data={NETFLIX_ORIGINALS} />
         <Title>Continue Watching</Title>
-        <ContinueWatching navigation={navigation} />
+        <ContinueWatching navigation={navigation} data={CONTINUE_WATCHING} />
         <Title>Explore by Genres</Title>
         <GenresComponent navigation={navigation} />
         <Title>Trending</Title>
-        <TrendingComponent navigation={navigation} />
+        <TrendingComponent navigation={navigation} data={TRENDING} />
       </Body>
     </Container>
   );

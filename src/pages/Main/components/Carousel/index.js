@@ -12,52 +12,43 @@ import {
 } from './styles';
 
 const { width } = Dimensions.get('window');
-const DATA = [
-  {
-    teste: true,
-  },
-  {
-    teste: true,
-  },
-  {
-    teste: true,
-  },
-];
 
-const renderItem = () => {
+const renderItem = ({ item }) => {
   return (
     <Slide>
       <BackgroundSlide
         source={{
-          uri:
-            'https://www.calltheone.com/storage/blog/2/2018/09/19/the-defenders_orig.jpeg',
+          uri: item.Poster,
         }}>
         <Description>
-          <MovieType>Movie - Action</MovieType>
-          <TextSlide>Marvels The Defenders</TextSlide>
-          <MovieRuntime>106 min</MovieRuntime>
+          <MovieType>
+            {item.Type} - {item.Genre[0]}
+          </MovieType>
+          <TextSlide>{item.Title}</TextSlide>
+          <MovieRuntime>{item.Runtime}</MovieRuntime>
         </Description>
       </BackgroundSlide>
     </Slide>
   );
 };
 
-export default function CarouselComponent() {
+export default function CarouselComponent({ data }) {
   const [activeSlide, setActiveSlide] = useState(0);
 
   return (
     <>
       <Carousel
-        data={DATA}
+        data={data.originals}
         autoplay
         loop
+        keyExtractor={item => item.id}
         renderItem={renderItem}
         sliderWidth={width}
         itemWidth={width - 50}
         onSnapToItem={index => setActiveSlide(index)}
       />
       <Pagination
-        dotsLength={DATA.length}
+        dotsLength={data.originals.length}
         activeDotIndex={activeSlide}
         containerStyle={{
           height: 15,

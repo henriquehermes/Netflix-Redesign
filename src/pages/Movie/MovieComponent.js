@@ -62,7 +62,7 @@ export default function MovieComponent({ navigation }) {
         <About>
           <Title>About</Title>
           <TitleDescription>
-            Los Angeles police officer Brian O'Conner must decide where his
+            Los Angeles police officer Brian OConner must decide where his
             loyalty really lies when he becomes enamored with the street racing
             world he has been sent undercover to destroy.
           </TitleDescription>
@@ -74,9 +74,9 @@ export default function MovieComponent({ navigation }) {
           <TitleDescription>Rob Cohen</TitleDescription>
           <Title>Writer</Title>
           <TitleDescription>
-            Ken Li (magazine article \"Racer X\"), Gary Scott Thompson (screen
+            Ken Li (magazine article Racer X), Gary Scott Thompson (screen
             story), Gary Scott Thompson (screenplay), Erik Bergquist
-            (screenplay), David Ayer (screenplay){' '}
+            (screenplay), David Ayer (screenplay)
           </TitleDescription>
         </About>
       </Body>

@@ -3,7 +3,7 @@ import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
 import Login from '~/pages/Login/LoginComponent';
-import Main from '~/pages/Main/MainComponent';
+import Main from '~/pages/Main/MainController';
 import Profile from '~/pages/Profile/ProfileComponent';
 import Movie from '~/pages/Movie/MovieComponent';
 
