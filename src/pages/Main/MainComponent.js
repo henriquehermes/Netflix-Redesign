@@ -58,7 +58,7 @@ export default function MainComponent({
             <ButtonText>VIEW ALL</ButtonText>
           </ButtonView>
         </Row>
-        {NETFLIX_ORIGINALS.length > 0 ? (
+        {NETFLIX_ORIGINALS && NETFLIX_ORIGINALS.length > 0 ? (
           <CarouselComponent data={NETFLIX_ORIGINALS} />
         ) : (
           <ContainerLoader height={210}>
@@ -66,7 +66,7 @@ export default function MainComponent({
           </ContainerLoader>
         )}
         <Title>Continue Watching</Title>
-        {CONTINUE_WATCHING.length > 0 ? (
+        {CONTINUE_WATCHING && CONTINUE_WATCHING.length > 0 ? (
           <CardMovies navigation={navigation} data={CONTINUE_WATCHING} />
         ) : (
           <ContainerLoader height={191}>
@@ -74,7 +74,7 @@ export default function MainComponent({
           </ContainerLoader>
         )}
         <Title>Explore by Genres</Title>
-        {GENRES.length > 0 ? (
+        {GENRES && GENRES.length > 0 ? (
           <GenresComponent navigation={navigation} data={GENRES} />
         ) : (
           <ContainerLoader height={60}>
@@ -83,12 +83,11 @@ export default function MainComponent({
         )}
         <Row>
           <Title>Trending</Title>
-          <ButtonView
-            onPress={() => openCategory('Trending', TRENDING.trending)}>
+          <ButtonView onPress={() => openCategory('Trending', TRENDING)}>
             <ButtonText>VIEW ALL</ButtonText>
           </ButtonView>
         </Row>
-        {TRENDING.length > 0 ? (
+        {TRENDING && TRENDING.length > 0 ? (
           <TrendingComponent navigation={navigation} data={TRENDING} />
         ) : (
           <ContainerLoader height={108}>
@@ -96,7 +95,7 @@ export default function MainComponent({
           </ContainerLoader>
         )}
         <Title>Top 3 Movies Watched in Brazil 🇧🇷</Title>
-        {BRAZIL_MOVIES.length > 0 ? (
+        {BRAZIL_MOVIES && BRAZIL_MOVIES.length > 0 ? (
           <CardMovies navigation={navigation} data={BRAZIL_MOVIES} />
         ) : (
           <ContainerLoader height={191}>
@@ -104,7 +103,7 @@ export default function MainComponent({
           </ContainerLoader>
         )}
         <Title>Top 3 Movies Watched in USA 🇺🇸</Title>
-        {USA_MOVIES.length > 0 ? (
+        {USA_MOVIES && USA_MOVIES.length > 0 ? (
           <CardMovies navigation={navigation} data={USA_MOVIES} />
         ) : (
           <ContainerLoader height={191}>

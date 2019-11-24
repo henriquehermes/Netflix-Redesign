@@ -6,7 +6,7 @@ export const ItemContainer = styled.TouchableOpacity`
   height: 80px;
   margin: 10px 25px;
   overflow: hidden;
-  background-color: ${props => props.theme.inputBackground};
+  background-color: #1c1c1c;
   border-radius: 4px;
   align-items: center;
 `;

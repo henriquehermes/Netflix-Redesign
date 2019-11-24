@@ -7,7 +7,7 @@ export const CustomButton = styled.TouchableOpacity`
   align-items: center;
   min-width: 100px;
   min-height: 40px;
-  background-color: ${props => props.theme.primary};
+  background-color: #d7240f;
   border-radius: 4px;
 `;
 

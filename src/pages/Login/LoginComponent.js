@@ -14,11 +14,13 @@ export default function Login({ loginInApp, isLoading }) {
       <Netflix />
       <Body>
         <TextInput
+          testID="testEmail"
           placeholder="Email"
           value={email}
           onChangeText={text => setEmail(text)}
         />
         <TextInput
+          testID="testPassword"
           placeholder="Password"
           value={password}
           onChangeText={text => setPassword(text)}

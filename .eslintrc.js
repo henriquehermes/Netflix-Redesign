@@ -32,4 +32,7 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
     'react/jsx-props-no-spreading': [0],
   },
+  env: {
+    jest: true,
+  },
 };

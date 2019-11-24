@@ -4,7 +4,7 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import LOGO from '~/assets/img/Netflix_Logo.png';
 
 export const Container = styled.View`
-  background-color: ${props => props.theme.background};
+  background-color: #111111;
   height: 100%;
 `;
 

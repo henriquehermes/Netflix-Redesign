@@ -8,7 +8,7 @@ export const Container = styled.KeyboardAvoidingView.attrs({
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: ${props => props.theme.background};
+  background-color: #111111;
   padding: 20px 15px;
 `;
 

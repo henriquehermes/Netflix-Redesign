@@ -25,5 +25,6 @@ export default class MovieModel {
     this.Production = !dictionary ? '' : dictionary.Production;
     this.Website = !dictionary ? '' : dictionary.Website;
     this.trailerURL = !dictionary ? '' : dictionary.trailerURL;
+    this.totalSeasons = !dictionary ? '' : dictionary.totalSeasons;
   }
 }

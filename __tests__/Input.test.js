@@ -4,11 +4,11 @@
 
 import 'react-native';
 import React from 'react';
-import App from '../App';
-
-// Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';
 
+import Input from '../src/components/Input';
+
 it('renders correctly', () => {
-  renderer.create(<App />);
+  const tree = renderer.create(<Input />).toJSON();
+  expect(tree).toMatchSnapshot();
 });

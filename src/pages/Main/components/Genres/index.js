@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { FlatList } from 'react-native-gesture-handler';
+import { FlatList } from 'react-native';
 import { useDispatch } from 'react-redux';
 
 import DRAMA from '~/config/drama.json';

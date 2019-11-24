@@ -1,0 +1,540 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly MainComponent 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#111111",
+        "height": "100%",
+        "width": "100%",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "height": 70,
+          "paddingBottom": 10,
+          "paddingLeft": 15,
+          "paddingRight": 15,
+          "paddingTop": 10,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      isTVSelectable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Object {
+            "backgroundColor": "transparent",
+            "borderRadius": 0,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "flex-start",
+              "padding": 8,
+            },
+            Object {
+              "backgroundColor": "transparent",
+              "borderRadius": 0,
+            },
+            Array [
+              Object {},
+            ],
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "white",
+                "fontSize": 20,
+              },
+              Object {
+                "marginRight": 10,
+              },
+              Object {
+                "fontFamily": "Material Design Icons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          漢
+        </Text>
+      </View>
+    </View>
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../src/assets/img/Netflix_Logo.png",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "height": 65,
+            "width": 100,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "flex": 1,
+        }
+      }
+    >
+      <View
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "overflow": "hidden",
+            },
+            Object {
+              "backgroundColor": "transparent",
+              "borderRadius": 0,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "justifyContent": "flex-start",
+                "padding": 8,
+              },
+              Object {
+                "backgroundColor": "transparent",
+                "borderRadius": 0,
+              },
+              Array [
+                Object {},
+              ],
+            ]
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "white",
+                  "fontSize": 20,
+                },
+                Object {
+                  "marginRight": 10,
+                },
+                Object {
+                  "fontFamily": "Material Design Icons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                Object {},
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+  <RCTScrollView
+    overScrollMode="never"
+    style={
+      Array [
+        Object {},
+      ]
+    }
+  >
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#fff",
+                "fontSize": 18,
+                "marginBottom": 15,
+                "marginLeft": 25,
+                "marginRight": 25,
+                "marginTop": 0,
+              },
+            ]
+          }
+        >
+          Netflix Originals
+        </Text>
+        <View
+          accessible={true}
+          focusable={true}
+          isTVSelectable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#d7240f",
+                  "fontSize": 12,
+                  "marginBottom": 15,
+                  "marginLeft": 25,
+                  "marginRight": 25,
+                  "marginTop": 0,
+                },
+              ]
+            }
+          >
+            VIEW ALL
+          </Text>
+        </View>
+      </View>
+      <View
+        height={210}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "height": 210,
+              "justifyContent": "center",
+              "width": "100%",
+            },
+          ]
+        }
+      >
+        <ActivityIndicator
+          animating={true}
+          color="#D7240F"
+          hidesWhenStopped={true}
+          size="large"
+          style={
+            Array [
+              Object {},
+            ]
+          }
+        />
+      </View>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#fff",
+              "fontSize": 18,
+              "marginBottom": 15,
+              "marginLeft": 25,
+              "marginRight": 25,
+              "marginTop": 0,
+            },
+          ]
+        }
+      >
+        Continue Watching
+      </Text>
+      <View
+        height={191}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "height": 191,
+              "justifyContent": "center",
+              "width": "100%",
+            },
+          ]
+        }
+      >
+        <ActivityIndicator
+          animating={true}
+          color="#D7240F"
+          hidesWhenStopped={true}
+          size="large"
+          style={
+            Array [
+              Object {},
+            ]
+          }
+        />
+      </View>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#fff",
+              "fontSize": 18,
+              "marginBottom": 15,
+              "marginLeft": 25,
+              "marginRight": 25,
+              "marginTop": 0,
+            },
+          ]
+        }
+      >
+        Explore by Genres
+      </Text>
+      <View
+        height={60}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "height": 60,
+              "justifyContent": "center",
+              "width": "100%",
+            },
+          ]
+        }
+      >
+        <ActivityIndicator
+          animating={true}
+          color="#D7240F"
+          hidesWhenStopped={true}
+          size="large"
+          style={
+            Array [
+              Object {},
+            ]
+          }
+        />
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#fff",
+                "fontSize": 18,
+                "marginBottom": 15,
+                "marginLeft": 25,
+                "marginRight": 25,
+                "marginTop": 0,
+              },
+            ]
+          }
+        >
+          Trending
+        </Text>
+        <View
+          accessible={true}
+          focusable={true}
+          isTVSelectable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#d7240f",
+                  "fontSize": 12,
+                  "marginBottom": 15,
+                  "marginLeft": 25,
+                  "marginRight": 25,
+                  "marginTop": 0,
+                },
+              ]
+            }
+          >
+            VIEW ALL
+          </Text>
+        </View>
+      </View>
+      <View
+        height={108}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "height": 108,
+              "justifyContent": "center",
+              "width": "100%",
+            },
+          ]
+        }
+      >
+        <ActivityIndicator
+          animating={true}
+          color="#D7240F"
+          hidesWhenStopped={true}
+          size="large"
+          style={
+            Array [
+              Object {},
+            ]
+          }
+        />
+      </View>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#fff",
+              "fontSize": 18,
+              "marginBottom": 15,
+              "marginLeft": 25,
+              "marginRight": 25,
+              "marginTop": 0,
+            },
+          ]
+        }
+      >
+        Top 3 Movies Watched in Brazil 🇧🇷
+      </Text>
+      <View
+        height={191}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "height": 191,
+              "justifyContent": "center",
+              "width": "100%",
+            },
+          ]
+        }
+      >
+        <ActivityIndicator
+          animating={true}
+          color="#D7240F"
+          hidesWhenStopped={true}
+          size="large"
+          style={
+            Array [
+              Object {},
+            ]
+          }
+        />
+      </View>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#fff",
+              "fontSize": 18,
+              "marginBottom": 15,
+              "marginLeft": 25,
+              "marginRight": 25,
+              "marginTop": 0,
+            },
+          ]
+        }
+      >
+        Top 3 Movies Watched in USA 🇺🇸
+      </Text>
+      <View
+        height={191}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "height": 191,
+              "justifyContent": "center",
+              "width": "100%",
+            },
+          ]
+        }
+      >
+        <ActivityIndicator
+          animating={true}
+          color="#D7240F"
+          hidesWhenStopped={true}
+          size="large"
+          style={
+            Array [
+              Object {},
+            ]
+          }
+        />
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
