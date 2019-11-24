@@ -25,6 +25,8 @@ export default function MainComponent({
   TRENDING,
   CONTINUE_WATCHING,
   GENRES,
+  BRAZIL_MOVIES,
+  USA_MOVIES,
   navigation,
   logoff,
 }) {
@@ -67,6 +69,10 @@ export default function MainComponent({
           </ButtonView>
         </Row>
         <TrendingComponent navigation={navigation} data={TRENDING} />
+        <Title>Top Movies Watched in Brazil 🇧🇷</Title>
+        <ContinueWatching navigation={navigation} data={BRAZIL_MOVIES} />
+        <Title>Top Movies Watched in USA 🇺🇸</Title>
+        <ContinueWatching navigation={navigation} data={USA_MOVIES} />
       </Body>
     </Container>
   );
