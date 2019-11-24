@@ -18,6 +18,7 @@ export default function LoginController({ navigation }) {
     if (email === 'ian@email.com' && password === '123') {
       await AsyncStorage.setItem('User', JSON.stringify(USERS.list[1]));
       navigation.navigate('AppNavigator');
+      return;
     }
     setIsLoading(false);
     showMessage({
