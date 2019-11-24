@@ -1,9 +1,19 @@
 import React from 'react';
 
-import { FlatList } from 'react-native-gesture-handler';
+import { FlatList } from 'react-native';
+import { useDispatch } from 'react-redux';
+
+import DEFAULT from '~/store/ducks/constants';
 import { Slide, MovieImage } from './styles';
 
 export default function TrendingComponent({ data, navigation }) {
+  const dispatch = useDispatch();
+
+  function openDetail(detail) {
+    dispatch({ type: DEFAULT.SET_MOVIE, detail });
+    navigation.navigate('Movie');
+  }
+
   return (
     <FlatList
       data={data.trending}
@@ -11,7 +21,7 @@ export default function TrendingComponent({ data, navigation }) {
         <Slide
           firstIndex={index === 0}
           lastIndex={index === data.trending.length - 1}
-          onPress={() => navigation.navigate('Movie')}>
+          onPress={() => openDetail(item)}>
           <MovieImage
             source={{
               uri: item.Poster,

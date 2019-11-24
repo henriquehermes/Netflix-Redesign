@@ -46,4 +46,18 @@ export const Title = styled.Text`
   margin: 0px 25px 15px 25px;
 `;
 
+export const ButtonText = styled.Text`
+  font-size: 12px;
+  color: ${props => props.theme.primary};
+  margin: 0px 25px 15px 25px;
+`;
+
+export const ButtonView = styled.TouchableOpacity``;
+
 export const Body = styled.ScrollView``;
+
+export const Row = styled.View`
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+`;

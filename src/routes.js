@@ -6,6 +6,7 @@ import Login from '~/pages/Login/LoginComponent';
 import Main from '~/pages/Main/MainController';
 import Profile from '~/pages/Profile/ProfileComponent';
 import Movie from '~/pages/Movie/MovieComponent';
+import Category from '~/pages/Category/CategoryController';
 
 const Navigation = () => {
   function getAppNavigator() {
@@ -30,6 +31,12 @@ const Navigation = () => {
       },
       Movie: {
         screen: Movie,
+        navigationOptions: () => ({
+          header: null,
+        }),
+      },
+      Category: {
+        screen: Category,
         navigationOptions: () => ({
           header: null,
         }),

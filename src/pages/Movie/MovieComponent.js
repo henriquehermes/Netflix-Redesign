@@ -33,7 +33,7 @@ export default function MovieComponent({ navigation }) {
   return (
     <Container>
       <Header>
-        <ArrowLeft onPress={() => navigation.navigate('Main')} />
+        <ArrowLeft onPress={() => navigation.goBack()} />
       </Header>
       <Body overScrollMode="never">
         <MovieImage
