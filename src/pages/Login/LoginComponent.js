@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import { ActivityIndicator } from 'react-native';
 
 import { Container, Netflix, Body, Background } from './LoginStyles';
 import Button from '~/components/Button';
 import TextInput from '~/components/Input';
 
-export default function Login({ loginInApp }) {
+export default function Login({ loginInApp, isLoading }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -24,11 +25,15 @@ export default function Login({ loginInApp }) {
           type="password"
           secureTextEntry
         />
-        <Button
-          onPress={() => loginInApp(email, password)}
-          label="Sign In"
-          style={{ marginTop: 15 }}
-        />
+        {isLoading ? (
+          <ActivityIndicator size="large" color="#D7240F" />
+        ) : (
+          <Button
+            onPress={() => loginInApp(email, password)}
+            label="Sign In"
+            style={{ marginTop: 15 }}
+          />
+        )}
       </Body>
       <Background />
     </Container>
