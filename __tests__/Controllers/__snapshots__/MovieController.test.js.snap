@@ -579,6 +579,140 @@ exports[`renders correctly 1`] = `
         >
           Roberto Aguirre-Sacasa
         </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#fff",
+                "fontSize": 18,
+              },
+            ]
+          }
+        >
+          IMDB Rating
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "rgba(255, 255, 255, 0.4)",
+                "fontSize": 12,
+                "marginBottom": 15,
+              },
+            ]
+          }
+        >
+          7.2
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#fff",
+                "fontSize": 18,
+              },
+            ]
+          }
+        >
+          IMDB Votes
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "rgba(255, 255, 255, 0.4)",
+                "fontSize": 12,
+                "marginBottom": 15,
+              },
+            ]
+          }
+        >
+          96,489
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#fff",
+                "fontSize": 18,
+              },
+            ]
+          }
+        >
+          Rantings
+        </Text>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "flex-start",
+                "flexDirection": "row",
+                "flexWrap": "wrap",
+                "justifyContent": "flex-start",
+                "marginBottom": 5,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 10,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "borderColor": "rgba(255, 255, 255, 0.4)",
+                  "borderRadius": 4,
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                  "flexDirection": "column",
+                  "justifyContent": "center",
+                  "marginBottom": 2,
+                  "marginLeft": 0,
+                  "marginRight": 10,
+                  "marginTop": 5,
+                  "maxWidth": 120,
+                  "minHeight": 80,
+                  "paddingBottom": 2,
+                  "paddingLeft": 5,
+                  "paddingRight": 5,
+                  "paddingTop": 2,
+                  "textAlign": "center",
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "rgba(255, 255, 255, 1)",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "marginBottom": 2,
+                    "textAlign": "center",
+                  },
+                ]
+              }
+            >
+              Internet Movie Database
+            </Text>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#1abd32",
+                    "fontSize": 14,
+                    "textAlign": "center",
+                  },
+                ]
+              }
+            >
+              7.2/10
+            </Text>
+          </View>
+        </View>
       </View>
     </View>
   </RCTScrollView>
