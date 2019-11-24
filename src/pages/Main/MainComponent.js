@@ -25,6 +25,7 @@ export default function MainComponent({
   TRENDING,
   CONTINUE_WATCHING,
   navigation,
+  logoff,
 }) {
   const dispatch = useDispatch();
 
@@ -36,7 +37,7 @@ export default function MainComponent({
   return (
     <Container>
       <Header>
-        <Logout onPress={() => navigation.navigate('Login')} />
+        <Logout onPress={() => logoff()} />
         <Netflix />
         <View style={{ flex: 1, alignItems: 'flex-end' }}>
           <UserProfile onPress={() => navigation.navigate('Profile')} />

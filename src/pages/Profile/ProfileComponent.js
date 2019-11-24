@@ -14,36 +14,7 @@ import {
   MovieAvatar,
 } from './ProfileStyles';
 
-const DATA = [
-  {
-    a: true,
-  },
-  {
-    a: true,
-  },
-  {
-    a: true,
-  },
-  {
-    a: true,
-  },
-  {
-    a: true,
-  },
-];
-
-const renderItem = () => {
-  return (
-    <MovieAvatar
-      source={{
-        uri:
-          'https://images-na.ssl-images-amazon.com/images/I/81OqnFpyxUL._SY445_.jpg',
-      }}
-    />
-  );
-};
-
-export default function ProfileComponent({ navigation }) {
+export default function ProfileComponent({ navigation, data }) {
   return (
     <Container>
       <Header>
@@ -52,17 +23,21 @@ export default function ProfileComponent({ navigation }) {
       </Header>
       <Body overScrollMode="never">
         <Form>
-          <Avatar
-            source={{ uri: 'https://api.adorable.io/avatars/249/random1.png' }}
-          />
-          <TextInput placeHolder="Name" />
-          <TextInput placeHolder="Email" />
+          <Avatar source={{ uri: data.picture }} />
+          <TextInput placeHolder="Name" editable={false} value={data.name} />
+          <TextInput placeHolder="Email" editable={false} value={data.email} />
           <Title>Last 5 movies watched</Title>
           <FlatList
-            data={DATA}
+            data={data.movieList}
             numColumns={3}
-            // keyExtractor={Math.random()}
-            renderItem={renderItem}
+            keyExtractor={item => item.Title}
+            renderItem={({ item }) => (
+              <MovieAvatar
+                source={{
+                  uri: item.Poster,
+                }}
+              />
+            )}
           />
         </Form>
       </Body>

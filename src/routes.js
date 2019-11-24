@@ -2,13 +2,23 @@ import React from 'react';
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
-import Login from '~/pages/Login/LoginComponent';
+import Login from '~/pages/Login/LoginController';
 import Main from '~/pages/Main/MainController';
-import Profile from '~/pages/Profile/ProfileComponent';
+import Profile from '~/pages/Profile/ProfileController';
 import Movie from '~/pages/Movie/MovieComponent';
 import Category from '~/pages/Category/CategoryController';
 
-const Navigation = () => {
+const Navigation = ({ initialRouteName }) => {
+  function getAuthNavigator() {
+    return createStackNavigator({
+      Login: {
+        screen: Login,
+        navigationOptions: () => ({
+          header: null,
+        }),
+      },
+    });
+  }
   function getAppNavigator() {
     return createStackNavigator({
       Main: {
@@ -19,12 +29,6 @@ const Navigation = () => {
       },
       Profile: {
         screen: Profile,
-        navigationOptions: () => ({
-          header: null,
-        }),
-      },
-      Login: {
-        screen: Login,
         navigationOptions: () => ({
           header: null,
         }),
@@ -45,9 +49,15 @@ const Navigation = () => {
   }
 
   const Routes = createAppContainer(
-    createSwitchNavigator({
-      AppNavigator: getAppNavigator(),
-    }),
+    createSwitchNavigator(
+      {
+        AuthNavigator: getAuthNavigator(),
+        AppNavigator: getAppNavigator(),
+      },
+      {
+        initialRouteName,
+      },
+    ),
   );
   return <Routes />;
 };

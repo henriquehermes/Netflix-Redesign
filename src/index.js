@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import AsyncStorage from '@react-native-community/async-storage';
 
 import { Provider } from 'react-redux';
 import { ThemeProvider } from 'styled-components';
@@ -14,12 +15,25 @@ const theme = {
   highlight: '#1ABD32',
 };
 
-const App = () => (
-  <Provider store={store}>
-    <ThemeProvider theme={theme}>
-      <Routes />
-    </ThemeProvider>
-  </Provider>
-);
+export default function App() {
+  const [route, setRoute] = useState('AuthNavigator');
+  useEffect(() => {
+    async function getUserLogged() {
+      const response = await AsyncStorage.getItem('User');
+      if (response) {
+        setRoute('AppNavigator');
+      } else {
+        setRoute('AuthNavigator');
+      }
+    }
+    getUserLogged();
+  }, []);
 
-export default App;
+  return (
+    <Provider store={store}>
+      <ThemeProvider theme={theme}>
+        <Routes initialRouteName={route} />
+      </ThemeProvider>
+    </Provider>
+  );
+}
