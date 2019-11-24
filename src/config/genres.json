@@ -1,0 +1,11 @@
+{
+  "list": [
+    { "id": 1, "type": "Drama" },
+    { "id": 2, "type": "Comedy" },
+    { "id": 3, "type": "Crime" },
+    { "id": 4, "type": "Romance" },
+    { "id": 5, "type": "Adventure" },
+    { "id": 6, "type": "Fantasy" },
+    { "id": 7, "type": "Thriller" }
+  ]
+}

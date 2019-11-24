@@ -3,45 +3,69 @@ import React from 'react';
 import { FlatList } from 'react-native-gesture-handler';
 import { useDispatch } from 'react-redux';
 
+import DRAMA from '~/config/drama.json';
+import COMEDY from '~/config/comedy.json';
+import CRIME from '~/config/crime.json';
+import ROMANCE from '~/config/romance.json';
+import ADVENTURE from '~/config/adventure.json';
+import FANTASY from '~/config/fantasy.json';
+import THRILLER from '~/config/thriller.json';
+
 import DEFAULT from '~/store/ducks/constants';
 import { Slide } from './styles';
 import Button from '~/components/Button';
 
-const DATA = [
-  {
-    name: 'Action',
-  },
-  {
-    name: 'Adventure',
-  },
-  {
-    name: 'Comedy',
-  },
-  {
-    name: 'Comedy',
-  },
-];
-
-export default function GenresComponent({ navigation }) {
+export default function GenresComponent({ navigation, data }) {
   const dispatch = useDispatch();
 
-  function openCategory(typeCategory, data) {
-    dispatch({ type: DEFAULT.SET_CATEGORY, typeCategory, data });
+  function openCategory(typeCategory) {
+    let listArray = [];
+    switch (typeCategory) {
+      case 'Drama':
+        listArray = DRAMA.list;
+        break;
+      case 'Comedy':
+        listArray = COMEDY.list;
+        break;
+
+      case 'Crime':
+        listArray = CRIME.list;
+        break;
+
+      case 'Romance':
+        listArray = ROMANCE.list;
+        break;
+
+      case 'Adventure':
+        listArray = ADVENTURE.list;
+        break;
+
+      case 'Fantasy':
+        listArray = FANTASY.list;
+        break;
+
+      case 'Thriller':
+        listArray = THRILLER.list;
+        break;
+
+      default:
+    }
+    dispatch({ type: DEFAULT.SET_CATEGORY, typeCategory, data: listArray });
     navigation.navigate('Category');
   }
 
   return (
     <FlatList
-      data={DATA}
+      data={data.list}
       renderItem={({ item, index }) => (
-        <Slide firstIndex={index === 0} lastIndex={index === 3} key={index}>
-          <Button
-            label={item.name}
-            onPress={() => openCategory(item.name, [])}
-          />
+        <Slide
+          firstIndex={index === 0}
+          lastIndex={index === data.list.length - 1}>
+          <Button label={item.type} onPress={() => openCategory(item.type)} />
         </Slide>
       )}
       horizontal
+      keyExtractor={({ index }) => index}
       showsHorizontalScrollIndicator={false}
       overScrollMode="never"
     />

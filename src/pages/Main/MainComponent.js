@@ -24,6 +24,7 @@ export default function MainComponent({
   NETFLIX_ORIGINALS,
   TRENDING,
   CONTINUE_WATCHING,
+  GENRES,
   navigation,
   logoff,
 }) {
@@ -57,7 +58,7 @@ export default function MainComponent({
         <Title>Continue Watching</Title>
         <ContinueWatching navigation={navigation} data={CONTINUE_WATCHING} />
         <Title>Explore by Genres</Title>
-        <GenresComponent navigation={navigation} />
+        <GenresComponent navigation={navigation} data={GENRES} />
         <Row>
           <Title>Trending</Title>
           <ButtonView

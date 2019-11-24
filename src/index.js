@@ -17,6 +17,7 @@ const theme = {
 
 export default function App() {
   const [route, setRoute] = useState('AuthNavigator');
+
   useEffect(() => {
     async function getUserLogged() {
       const response = await AsyncStorage.getItem('User');
@@ -28,6 +29,8 @@ export default function App() {
     }
     getUserLogged();
   }, []);
+
+  console.disableYellowBox = true;
 
   return (
     <Provider store={store}>

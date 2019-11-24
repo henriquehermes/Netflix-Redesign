@@ -44,10 +44,10 @@ export const Form = styled.View`
 export const Avatar = styled.Image.attrs({
   resizeMode: 'contain',
 })`
-  width: 100px;
+  width: 150px;
   height: 100px;
   margin-bottom: 40px;
-  border-radius: 4px;
+  border-radius: 10px;
 `;
 
 export const Title = styled.Text`
