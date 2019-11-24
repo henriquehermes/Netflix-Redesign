@@ -2,6 +2,7 @@ import React from 'react';
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
+import Splash from '~/pages/Splash/SplashController';
 import Login from '~/pages/Login/LoginController';
 import Main from '~/pages/Main/MainController';
 import Profile from '~/pages/Profile/ProfileController';
@@ -9,6 +10,17 @@ import Movie from '~/pages/Movie/MovieComponent';
 import Category from '~/pages/Category/CategoryController';
 
 const Navigation = ({ initialRouteName }) => {
+  function getSplashNavigator() {
+    return createStackNavigator({
+      Splash: {
+        screen: Splash,
+        navigationOptions: () => ({
+          header: null,
+        }),
+      },
+    });
+  }
+
   function getAuthNavigator() {
     return createStackNavigator({
       Login: {
@@ -51,6 +63,7 @@ const Navigation = ({ initialRouteName }) => {
   const Routes = createAppContainer(
     createSwitchNavigator(
       {
+        SplashNavigator: getSplashNavigator(),
         AuthNavigator: getAuthNavigator(),
         AppNavigator: getAppNavigator(),
       },

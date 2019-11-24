@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import AsyncStorage from '@react-native-community/async-storage';
+import React from 'react';
 
 import { Provider } from 'react-redux';
 import { ThemeProvider } from 'styled-components';
@@ -16,26 +15,12 @@ const theme = {
 };
 
 export default function App() {
-  const [route, setRoute] = useState('AuthNavigator');
-
-  useEffect(() => {
-    async function getUserLogged() {
-      const response = await AsyncStorage.getItem('User');
-      if (response) {
-        setRoute('AppNavigator');
-      } else {
-        setRoute('AuthNavigator');
-      }
-    }
-    getUserLogged();
-  }, []);
-
   console.disableYellowBox = true;
 
   return (
     <Provider store={store}>
       <ThemeProvider theme={theme}>
-        <Routes initialRouteName={route} />
+        <Routes initialRouteName="SplashNavigator" />
       </ThemeProvider>
     </Provider>
   );
