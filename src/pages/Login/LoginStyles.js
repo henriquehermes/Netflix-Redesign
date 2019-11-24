@@ -29,7 +29,7 @@ export const Body = styled.View`
 
 export const Background = styled.Image.attrs({
   source: BACKGROUND,
-  resizeMode: 'center',
+  resizeMode: 'contain',
 })`
   position: absolute;
   opacity: 0.15;

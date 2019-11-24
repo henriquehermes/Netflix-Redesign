@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import YouTube from 'react-native-youtube';
 
 import {
   Container,
@@ -24,6 +25,8 @@ import Genre from './components/Genre';
 import Button from '~/components/Button';
 
 export default function MovieComponent({ navigation }) {
+  const [videoPlayer, setVideoPlayer] = useState(false);
+
   return (
     <Container>
       <Header>
@@ -52,6 +55,7 @@ export default function MovieComponent({ navigation }) {
             image
             imageName="play"
             style={{ width: 150 }}
+            onPress={() => setVideoPlayer(true)}
           />
           <LikeButton />
         </RowButtons>
@@ -76,6 +80,18 @@ export default function MovieComponent({ navigation }) {
           </TitleDescription>
         </About>
       </Body>
+      {videoPlayer && (
+        <YouTube
+          apiKey="AIzaSyC57p-gNzW9D7fTcV16zwwyshuoJFBxtGE"
+          videoId="ndl1W4ltcmg"
+          play
+          fullscreen
+          style={{ alignSelf: 'stretch', height: '100%' }}
+          onChangeFullscreen={e => {
+            if (!e.isFullscreen) setVideoPlayer(false);
+          }}
+        />
+      )}
     </Container>
   );
 }
