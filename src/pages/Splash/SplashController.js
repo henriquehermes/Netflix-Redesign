@@ -13,7 +13,7 @@ export default function SplashController({ navigation }) {
       }
     }
     getUserLogged();
-  }, []);
+  }, [navigation]);
 
   return <SplashComponent />;
 }

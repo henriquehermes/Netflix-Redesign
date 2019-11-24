@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import YouTube from 'react-native-youtube';
-import { useSelector } from 'react-redux';
 
 import {
   Container,
@@ -19,16 +18,14 @@ import {
   About,
   Title,
   TitleDescription,
-  LikeButton,
   ImageBlur,
 } from './MovieStyles';
 
 import Genre from './components/Genre';
 import Button from '~/components/Button';
 
-export default function MovieComponent({ navigation }) {
+export default function MovieComponent({ navigation, detailMovie }) {
   const [videoPlayer, setVideoPlayer] = useState(false);
-  const detailMovie = useSelector(state => state.movie.detail);
 
   return (
     <Container>
@@ -67,7 +64,6 @@ export default function MovieComponent({ navigation }) {
             style={{ width: 150 }}
             onPress={() => setVideoPlayer(detailMovie.trailerURL)}
           />
-          <LikeButton />
         </RowButtons>
         <About>
           <Title>About</Title>

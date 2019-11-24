@@ -6,7 +6,7 @@ import Splash from '~/pages/Splash/SplashController';
 import Login from '~/pages/Login/LoginController';
 import Main from '~/pages/Main/MainController';
 import Profile from '~/pages/Profile/ProfileController';
-import Movie from '~/pages/Movie/MovieComponent';
+import Movie from '~/pages/Movie/MovieController';
 import Category from '~/pages/Category/CategoryController';
 
 const Navigation = ({ initialRouteName }) => {

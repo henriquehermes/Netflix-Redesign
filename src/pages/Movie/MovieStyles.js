@@ -105,12 +105,3 @@ export const About = styled.View`
   align-items: flex-start;
   margin: 10px 25px;
 `;
-
-export const LikeButton = styled(Icon.Button).attrs({
-  name: 'thumb-up',
-  size: 25,
-  backgroundColor: 'transparent',
-  borderRadius: 0,
-})`
-  margin-left: 15px;
-`;
