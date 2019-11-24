@@ -16,7 +16,7 @@ import {
   Row,
 } from './MainStyles';
 import CarouselComponent from './components/Carousel';
-import ContinueWatching from './components/ContinueWatching';
+import CardMovies from './components/CardMovies';
 import TrendingComponent from './components/Trending';
 import GenresComponent from './components/Genres';
 
@@ -58,7 +58,7 @@ export default function MainComponent({
         </Row>
         <CarouselComponent data={NETFLIX_ORIGINALS} />
         <Title>Continue Watching</Title>
-        <ContinueWatching navigation={navigation} data={CONTINUE_WATCHING} />
+        <CardMovies navigation={navigation} data={CONTINUE_WATCHING} />
         <Title>Explore by Genres</Title>
         <GenresComponent navigation={navigation} data={GENRES} />
         <Row>
@@ -69,10 +69,10 @@ export default function MainComponent({
           </ButtonView>
         </Row>
         <TrendingComponent navigation={navigation} data={TRENDING} />
-        <Title>Top Movies Watched in Brazil 🇧🇷</Title>
-        <ContinueWatching navigation={navigation} data={BRAZIL_MOVIES} />
-        <Title>Top Movies Watched in USA 🇺🇸</Title>
-        <ContinueWatching navigation={navigation} data={USA_MOVIES} />
+        <Title>Top 3 Movies Watched in Brazil 🇧🇷</Title>
+        <CardMovies navigation={navigation} data={BRAZIL_MOVIES} />
+        <Title>Top 3 Movies Watched in USA 🇺🇸</Title>
+        <CardMovies navigation={navigation} data={USA_MOVIES} />
       </Body>
     </Container>
   );

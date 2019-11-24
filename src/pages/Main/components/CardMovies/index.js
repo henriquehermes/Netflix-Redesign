@@ -12,7 +12,7 @@ import {
   MovieRuntime,
 } from './styles';
 
-export default function ContinueWatching({ data, navigation }) {
+export default function CardMovies({ data, navigation }) {
   const dispatch = useDispatch();
 
   function openDetail(detail) {
