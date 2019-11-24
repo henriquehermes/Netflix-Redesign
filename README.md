@@ -18,7 +18,7 @@ npx react-native run-android
 
 ## How to login
 
-You can login in App with two different users:
+You can log in to the app with two different users:
 
 ```
 email: marcela@email.com
@@ -35,6 +35,10 @@ password: 123
 ## Built With
 
 - [React Native](https://facebook.github.io/react-native/) - 0.61
+- [React](https://pt-br.reactjs.org) - 16.9.0
+- [React-Redux](https://react-redux.js.org) - 7.1.3
+- [Redux](https://redux.js.org) - 4.0.4
+- [Styled-Components](https://www.styled-components.com) - 4.4.1
 
 ## Screenshots
 
