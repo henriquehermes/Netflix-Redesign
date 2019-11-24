@@ -14,6 +14,8 @@ import {
   ButtonText,
   ButtonView,
   Row,
+  ContainerLoader,
+  Loader,
 } from './MainStyles';
 import CarouselComponent from './components/Carousel';
 import CardMovies from './components/CardMovies';
@@ -56,11 +58,29 @@ export default function MainComponent({
             <ButtonText>VIEW ALL</ButtonText>
           </ButtonView>
         </Row>
-        <CarouselComponent data={NETFLIX_ORIGINALS} />
+        {NETFLIX_ORIGINALS.length > 0 ? (
+          <CarouselComponent data={NETFLIX_ORIGINALS} />
+        ) : (
+          <ContainerLoader height={210}>
+            <Loader />
+          </ContainerLoader>
+        )}
         <Title>Continue Watching</Title>
-        <CardMovies navigation={navigation} data={CONTINUE_WATCHING} />
+        {CONTINUE_WATCHING.length > 0 ? (
+          <CardMovies navigation={navigation} data={CONTINUE_WATCHING} />
+        ) : (
+          <ContainerLoader height={191}>
+            <Loader />
+          </ContainerLoader>
+        )}
         <Title>Explore by Genres</Title>
-        <GenresComponent navigation={navigation} data={GENRES} />
+        {GENRES.length > 0 ? (
+          <GenresComponent navigation={navigation} data={GENRES} />
+        ) : (
+          <ContainerLoader height={60}>
+            <Loader />
+          </ContainerLoader>
+        )}
         <Row>
           <Title>Trending</Title>
           <ButtonView
@@ -68,11 +88,29 @@ export default function MainComponent({
             <ButtonText>VIEW ALL</ButtonText>
           </ButtonView>
         </Row>
-        <TrendingComponent navigation={navigation} data={TRENDING} />
+        {TRENDING.length > 0 ? (
+          <TrendingComponent navigation={navigation} data={TRENDING} />
+        ) : (
+          <ContainerLoader height={108}>
+            <Loader />
+          </ContainerLoader>
+        )}
         <Title>Top 3 Movies Watched in Brazil 🇧🇷</Title>
-        <CardMovies navigation={navigation} data={BRAZIL_MOVIES} />
+        {BRAZIL_MOVIES.length > 0 ? (
+          <CardMovies navigation={navigation} data={BRAZIL_MOVIES} />
+        ) : (
+          <ContainerLoader height={191}>
+            <Loader />
+          </ContainerLoader>
+        )}
         <Title>Top 3 Movies Watched in USA 🇺🇸</Title>
-        <CardMovies navigation={navigation} data={USA_MOVIES} />
+        {USA_MOVIES.length > 0 ? (
+          <CardMovies navigation={navigation} data={USA_MOVIES} />
+        ) : (
+          <ContainerLoader height={191}>
+            <Loader />
+          </ContainerLoader>
+        )}
       </Body>
     </Container>
   );

@@ -61,3 +61,15 @@ export const Row = styled.View`
   align-items: center;
   justify-content: space-between;
 `;
+
+export const ContainerLoader = styled.View`
+  height: ${props => (props.height ? props.height : 50)};
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Loader = styled.ActivityIndicator.attrs({
+  size: 'large',
+  color: '#D7240F',
+})``;
