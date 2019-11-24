@@ -2,7 +2,9 @@ import styled from 'styled-components/native';
 import LOGO from '~/assets/img/Netflix_Logo.png';
 import BACKGROUND from '~/assets/img/Netflix_Background.jpg';
 
-export const Container = styled.View`
+export const Container = styled.KeyboardAvoidingView.attrs({
+  behavior: 'height',
+})`
   justify-content: center;
   align-items: center;
   width: 100%;
