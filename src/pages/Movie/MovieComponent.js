@@ -19,6 +19,10 @@ import {
   Title,
   TitleDescription,
   ImageBlur,
+  ListRow,
+  CellTitle,
+  CellValue,
+  RantingCell,
 } from './MovieStyles';
 
 import Genre from './components/Genre';
@@ -74,6 +78,29 @@ export default function MovieComponent({ navigation, detailMovie }) {
           <TitleDescription>{detailMovie.Director}</TitleDescription>
           <Title>Writer</Title>
           <TitleDescription>{detailMovie.Writer}</TitleDescription>
+          <Title>IMDB Rating</Title>
+          <TitleDescription>{detailMovie.imdbRating}</TitleDescription>
+          <Title>IMDB Votes</Title>
+          <TitleDescription>{detailMovie.imdbVotes}</TitleDescription>
+          {!!detailMovie.Production && (
+            <>
+              <Title>Production</Title>
+              <TitleDescription>{detailMovie.Production}</TitleDescription>
+            </>
+          )}
+          {!!detailMovie.Ratings && detailMovie.Ratings.length > 0 && (
+            <>
+              <Title>Rantings</Title>
+              <ListRow>
+                {detailMovie.Ratings.map(item => (
+                  <RantingCell>
+                    <CellTitle>{item.Source}</CellTitle>
+                    <CellValue>{item.Value}</CellValue>
+                  </RantingCell>
+                ))}
+              </ListRow>
+            </>
+          )}
         </About>
       </Body>
       {videoPlayer && (

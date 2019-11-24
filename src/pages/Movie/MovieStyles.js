@@ -105,3 +105,36 @@ export const About = styled.View`
   align-items: flex-start;
   margin: 10px 25px;
 `;
+
+export const ListRow = styled.View`
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 10px 0px 5px 0px;
+`;
+export const CellTitle = styled.Text`
+  font-size: 14px;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 2px;
+  text-align: center;
+  font-weight: bold;
+`;
+export const CellValue = styled.Text`
+  font-size: 14px;
+  color: #1abd32;
+  text-align: center;
+`;
+
+export const RantingCell = styled.View`
+  max-width: 120px;
+  min-height: 80px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 2px 5px;
+  margin: 5px 10px 2px 0px;
+`;
