@@ -6,12 +6,14 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
-    "test": "jest",
+    "test": "jest --no-watchman --silent",
     "lint": "eslint ."
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.6.3",
+    "@types/jest": "^24.0.23",
     "react": "16.9.0",
+    "react-dom": "^16.12.0",
     "react-native": "0.61.4",
     "react-native-flash-message": "^0.1.15",
     "react-native-gesture-handler": "^1.5.0",
@@ -35,6 +37,8 @@
     "@react-native-community/eslint-config": "^0.0.5",
     "babel-jest": "^24.9.0",
     "babel-plugin-root-import": "^6.4.1",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
     "eslint": "^6.6.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.7.0",
@@ -45,10 +49,40 @@
     "eslint-plugin-react-hooks": "^2.3.0",
     "jest": "^24.9.0",
     "metro-react-native-babel-preset": "^0.57.0",
+    "mock-async-storage": "^2.2.0",
     "prettier": "^1.19.1",
-    "react-test-renderer": "16.9.0"
+    "react-native-testing-library": "^1.11.1",
+    "react-test-renderer": "16.9.0",
+    "redux-mock-store": "^1.5.3"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/store/index.js",
+      "!src/assets/index.js"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/jest",
+      "/src/assets",
+      "/src/store/index.js",
+      "/src/pages/Main/Components/styles.js"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/.history/"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "setupFiles": [
+      "<rootDir>/__mocks__/setup.js"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!(jest-)?react-native|react-navigation|@react-navigation)"
+    ]
   }
 }

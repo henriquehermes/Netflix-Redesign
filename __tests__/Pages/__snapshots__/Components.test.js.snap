@@ -1,0 +1,1936 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly CardComponent 1`] = `
+<RCTScrollView
+  data={Object {}}
+  disableVirtualization={false}
+  getItem={[Function]}
+  getItemCount={[Function]}
+  horizontal={true}
+  initialNumToRender={10}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={10}
+  numColumns={1}
+  onContentSizeChange={[Function]}
+  onEndReachedThreshold={2}
+  onLayout={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  overScrollMode="never"
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  showsHorizontalScrollIndicator={false}
+  stickyHeaderIndices={Array []}
+  updateCellsBatchingPeriod={50}
+  viewabilityConfigCallbackPairs={Array []}
+  windowSize={21}
+>
+  <View />
+</RCTScrollView>
+`;
+
+exports[`renders correctly GenresComponent 1`] = `
+<RCTScrollView
+  data={Object {}}
+  disableVirtualization={false}
+  getItem={[Function]}
+  getItemCount={[Function]}
+  horizontal={true}
+  initialNumToRender={10}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={10}
+  numColumns={1}
+  onContentSizeChange={[Function]}
+  onEndReachedThreshold={2}
+  onLayout={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  overScrollMode="never"
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  showsHorizontalScrollIndicator={false}
+  stickyHeaderIndices={Array []}
+  updateCellsBatchingPeriod={50}
+  viewabilityConfigCallbackPairs={Array []}
+  windowSize={21}
+>
+  <View />
+</RCTScrollView>
+`;
+
+exports[`renders correctly MovieComponent 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#111111",
+        "height": "100%",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "height": 50,
+          "paddingBottom": 10,
+          "paddingLeft": 15,
+          "paddingRight": 15,
+          "paddingTop": 10,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      isTVSelectable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Object {
+            "backgroundColor": "transparent",
+            "borderRadius": 0,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "flex-start",
+              "padding": 8,
+            },
+            Object {
+              "backgroundColor": "transparent",
+              "borderRadius": 0,
+            },
+            Array [
+              Object {},
+            ],
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "white",
+                "fontSize": 20,
+              },
+              Object {
+                "marginRight": 10,
+              },
+              Object {
+                "fontFamily": "Material Design Icons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          
+        </Text>
+      </View>
+    </View>
+  </View>
+  <RCTScrollView
+    overScrollMode="never"
+    style={
+      Array [
+        Object {},
+      ]
+    }
+  >
+    <View>
+      <Image
+        resizeMode="contain"
+        source={
+          Object {
+            "uri": "https://m.media-amazon.com/images/M/MV5BNDYxOTU0NDYtYzg2MC00YzgyLTg1YzctMDc1MGJmOGIzMTc3XkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_SX300.jpg",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "height": 200,
+              "width": "100%",
+            },
+          ]
+        }
+      />
+      <Image
+        blurRadius={10}
+        resizeMode="stretch"
+        source={
+          Object {
+            "uri": "https://m.media-amazon.com/images/M/MV5BNDYxOTU0NDYtYzg2MC00YzgyLTg1YzctMDc1MGJmOGIzMTc3XkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_SX300.jpg",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "height": 200,
+              "position": "absolute",
+              "width": "100%",
+              "zIndex": -999,
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "rgba(0, 0, 0, 0.5)",
+              "justifyContent": "center",
+              "marginBottom": 15,
+              "marginLeft": 25,
+              "marginRight": 25,
+              "marginTop": 15,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#d7240f",
+                "fontSize": 12,
+                "textTransform": "capitalize",
+              },
+            ]
+          }
+        >
+          series
+           - 
+          Crime
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#fff",
+                "fontSize": 24,
+                "fontWeight": "bold",
+              },
+            ]
+          }
+        >
+          Riverdale
+        </Text>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "justifyContent": "flex-start",
+                "marginBottom": 5,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 5,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#1abd32",
+                  "fontSize": 14,
+                  "marginRight": 20,
+                },
+              ]
+            }
+          >
+            IMDB 
+            7.2
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "rgba(255, 255, 255, 0.5)",
+                  "fontSize": 14,
+                  "marginRight": 20,
+                },
+              ]
+            }
+          >
+            2017–
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "borderColor": "rgba(255, 255, 255, 0.5)",
+                  "borderRadius": 4,
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                  "color": "rgba(255, 255, 255, 0.5)",
+                  "fontSize": 12,
+                  "paddingBottom": 0,
+                  "paddingLeft": 6,
+                  "paddingRight": 6,
+                  "paddingTop": 0,
+                },
+              ]
+            }
+          >
+            TV-14
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+              "marginHorizontal": 25,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "rgba(255, 255, 255, 0.1)",
+                "borderRadius": 4,
+                "height": 30,
+                "justifyContent": "center",
+                "marginBottom": 10,
+                "marginRight": 10,
+                "paddingBottom": 5,
+                "paddingLeft": 15,
+                "paddingRight": 15,
+                "paddingTop": 5,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "rgba(255, 255, 255, 0.4)",
+                  "fontSize": 11,
+                },
+              ]
+            }
+          >
+            Crime
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "rgba(255, 255, 255, 0.1)",
+                "borderRadius": 4,
+                "height": 30,
+                "justifyContent": "center",
+                "marginBottom": 10,
+                "marginRight": 10,
+                "paddingBottom": 5,
+                "paddingLeft": 15,
+                "paddingRight": 15,
+                "paddingTop": 5,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "rgba(255, 255, 255, 0.4)",
+                  "fontSize": 11,
+                },
+              ]
+            }
+          >
+            Drama
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "rgba(255, 255, 255, 0.1)",
+                "borderRadius": 4,
+                "height": 30,
+                "justifyContent": "center",
+                "marginBottom": 10,
+                "marginRight": 10,
+                "paddingBottom": 5,
+                "paddingLeft": 15,
+                "paddingRight": 15,
+                "paddingTop": 5,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "rgba(255, 255, 255, 0.4)",
+                  "fontSize": 11,
+                },
+              ]
+            }
+          >
+            Mystery
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "rgba(255, 255, 255, 0.1)",
+                "borderRadius": 4,
+                "height": 30,
+                "justifyContent": "center",
+                "marginBottom": 10,
+                "marginRight": 10,
+                "paddingBottom": 5,
+                "paddingLeft": 15,
+                "paddingRight": 15,
+                "paddingTop": 5,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "rgba(255, 255, 255, 0.4)",
+                  "fontSize": 11,
+                },
+              ]
+            }
+          >
+            Romance
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "flex-start",
+              "marginBottom": 10,
+              "marginLeft": 25,
+              "marginRight": 25,
+              "marginTop": 10,
+            },
+          ]
+        }
+      >
+        <View
+          accessible={true}
+          focusable={true}
+          isTVSelectable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#d7240f",
+              "borderRadius": 4,
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "minHeight": 40,
+              "minWidth": 100,
+              "opacity": 1,
+              "width": 150,
+            }
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "#Fff",
+                  "fontSize": 20,
+                },
+                Object {
+                  "marginRight": 5,
+                },
+                Object {
+                  "fontFamily": "Material Design Icons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                Object {},
+              ]
+            }
+          >
+            
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#fff",
+                  "fontSize": 12,
+                  "fontWeight": "600",
+                  "textTransform": "uppercase",
+                },
+              ]
+            }
+          >
+            Watch Trailer
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "flex-start",
+              "flexDirection": "column",
+              "justifyContent": "flex-start",
+              "marginBottom": 10,
+              "marginLeft": 25,
+              "marginRight": 25,
+              "marginTop": 10,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#fff",
+                "fontSize": 18,
+              },
+            ]
+          }
+        >
+          About
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "rgba(255, 255, 255, 0.4)",
+                "fontSize": 12,
+                "marginBottom": 15,
+              },
+            ]
+          }
+        >
+          While navigating the troubled waters of romance, school and family, Archie and his gang become entangled in dark Riverdale mysteries.
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#fff",
+                "fontSize": 18,
+              },
+            ]
+          }
+        >
+          Actors
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "rgba(255, 255, 255, 0.4)",
+                "fontSize": 12,
+                "marginBottom": 15,
+              },
+            ]
+          }
+        >
+          K.J. Apa, Lili Reinhart, Camila Mendes, Cole Sprouse
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#fff",
+                "fontSize": 18,
+              },
+            ]
+          }
+        >
+          Director
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "rgba(255, 255, 255, 0.4)",
+                "fontSize": 12,
+                "marginBottom": 15,
+              },
+            ]
+          }
+        >
+          N/A
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#fff",
+                "fontSize": 18,
+              },
+            ]
+          }
+        >
+          Writer
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "rgba(255, 255, 255, 0.4)",
+                "fontSize": 12,
+                "marginBottom": 15,
+              },
+            ]
+          }
+        >
+          Roberto Aguirre-Sacasa
+        </Text>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`renders correctly ProfileComponent 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#111111",
+        "height": "100%",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "height": 70,
+          "paddingBottom": 10,
+          "paddingLeft": 15,
+          "paddingRight": 15,
+          "paddingTop": 10,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      isTVSelectable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Object {
+            "backgroundColor": "transparent",
+            "borderRadius": 0,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "flex-start",
+              "padding": 8,
+            },
+            Object {
+              "backgroundColor": "transparent",
+              "borderRadius": 0,
+            },
+            Array [
+              Object {},
+            ],
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "white",
+                "fontSize": 20,
+              },
+              Object {
+                "marginRight": 10,
+              },
+              Object {
+                "fontFamily": "Material Design Icons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          
+        </Text>
+      </View>
+    </View>
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../src/assets/img/Netflix_Logo.png",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "height": 65,
+            "width": 100,
+          },
+        ]
+      }
+    />
+  </View>
+  <RCTScrollView
+    overScrollMode="never"
+    style={
+      Array [
+        Object {},
+      ]
+    }
+  >
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "column",
+              "paddingBottom": 15,
+              "paddingLeft": 25,
+              "paddingRight": 25,
+              "paddingTop": 15,
+              "width": "100%",
+            },
+          ]
+        }
+      >
+        <Image
+          resizeMode="contain"
+          source={
+            Object {
+              "uri": "https://i2.wp.com/cenaum.com/wp-content/uploads/2017/12/1_5ik6eH1kSnCVfYqxuXk4ew.jpeg?fit=1280%2C720",
+            }
+          }
+          style={
+            Array [
+              Object {
+                "borderRadius": 10,
+                "height": 100,
+                "marginBottom": 40,
+                "width": 150,
+              },
+            ]
+          }
+        />
+        <TextInput
+          allowFontScaling={true}
+          editable={false}
+          placeHolder="Name"
+          placeholderTextColor="rgba(255,255,255,0.2)"
+          rejectResponderTermination={true}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#1c1c1c",
+                "borderColor": "#1c1c1c",
+                "borderRadius": 4,
+                "borderStyle": "solid",
+                "borderWidth": 2,
+                "color": "rgba(255, 255, 255, 0.87)",
+                "fontSize": 14,
+                "marginBottom": 10,
+                "maxWidth": 300,
+                "paddingBottom": 5,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 5,
+                "width": "100%",
+              },
+            ]
+          }
+          underlineColorAndroid="transparent"
+          value="Marcela Camila Analu Mendes"
+        />
+        <TextInput
+          allowFontScaling={true}
+          editable={false}
+          placeHolder="Email"
+          placeholderTextColor="rgba(255,255,255,0.2)"
+          rejectResponderTermination={true}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#1c1c1c",
+                "borderColor": "#1c1c1c",
+                "borderRadius": 4,
+                "borderStyle": "solid",
+                "borderWidth": 2,
+                "color": "rgba(255, 255, 255, 0.87)",
+                "fontSize": 14,
+                "marginBottom": 10,
+                "maxWidth": 300,
+                "paddingBottom": 5,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 5,
+                "width": "100%",
+              },
+            ]
+          }
+          underlineColorAndroid="transparent"
+          value="marcela@email.com"
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#fff",
+                "fontSize": 18,
+                "marginBottom": 15,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 15,
+              },
+            ]
+          }
+        >
+          Last 5 movies watched
+        </Text>
+        <View
+          style={
+            Array [
+              Object {
+                "width": "100%",
+              },
+            ]
+          }
+        >
+          <RCTScrollView
+            data={
+              Array [
+                Object {
+                  "Actors": "Paul Walker, Vin Diesel, Michelle Rodriguez, Jordana Brewster",
+                  "Awards": "11 wins & 12 nominations.",
+                  "BoxOffice": "$142,542,950",
+                  "Country": "USA, Germany",
+                  "DVD": "01 Jan 2002",
+                  "Director": "Rob Cohen",
+                  "Genre": Array [
+                    "Action",
+                    "Crime",
+                    "Thriller",
+                  ],
+                  "Language": "English, Spanish",
+                  "Metascore": "58",
+                  "Plot": "Los Angeles police officer Brian O'Conner must decide where his loyalty really lies when he becomes enamored with the street racing world he has been sent undercover to destroy.",
+                  "Poster": "https://m.media-amazon.com/images/M/MV5BNzlkNzVjMDMtOTdhZC00MGE1LTkxODctMzFmMjkwZmMxZjFhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+                  "Production": "Universal Pictures",
+                  "Rated": "PG-13",
+                  "Ratings": Array [
+                    Object {
+                      "Source": "Internet Movie Database",
+                      "Value": "6.8/10",
+                    },
+                    Object {
+                      "Source": "Rotten Tomatoes",
+                      "Value": "53%",
+                    },
+                    Object {
+                      "Source": "Metacritic",
+                      "Value": "58/100",
+                    },
+                  ],
+                  "Released": "22 Jun 2001",
+                  "Runtime": "106 min",
+                  "Title": "The Fast and the Furious",
+                  "Type": "Movie - Action",
+                  "Website": "N/A",
+                  "Writer": "Ken Li (magazine article \\"Racer X\\"), Gary Scott Thompson (screen story), Gary Scott Thompson (screenplay), Erik Bergquist (screenplay), David Ayer (screenplay)",
+                  "Year": "2001",
+                  "imdbID": "tt0232500",
+                  "imdbRating": "6.8",
+                  "imdbVotes": "327,163",
+                  "trailerURL": "2TAOizOnNPo",
+                },
+                Object {
+                  "Actors": "Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing",
+                  "Awards": "Won 6 Oscars. Another 50 wins & 28 nominations.",
+                  "BoxOffice": "N/A",
+                  "Country": "USA",
+                  "DVD": "21 Sep 2004",
+                  "Director": "George Lucas",
+                  "Genre": Array [
+                    "Action",
+                    "Adventure",
+                    "Fantasy",
+                    "Sci-Fi",
+                  ],
+                  "Language": "English",
+                  "Metascore": "90",
+                  "Plot": "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.",
+                  "Poster": "https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+                  "Production": "20th Century Fox",
+                  "Rated": "PG",
+                  "Ratings": Array [
+                    Object {
+                      "Source": "Internet Movie Database",
+                      "Value": "8.6/10",
+                    },
+                    Object {
+                      "Source": "Rotten Tomatoes",
+                      "Value": "93%",
+                    },
+                    Object {
+                      "Source": "Metacritic",
+                      "Value": "90/100",
+                    },
+                  ],
+                  "Released": "25 May 1977",
+                  "Runtime": "121 min",
+                  "Title": "Star Wars: Episode IV - A New Hope",
+                  "Type": "movie",
+                  "Website": "N/A",
+                  "Writer": "George Lucas",
+                  "Year": "1977",
+                  "imdbID": "tt0076759",
+                  "imdbRating": "8.6",
+                  "imdbVotes": "1,143,909",
+                  "trailerURL": "vZ734NWnAHA",
+                },
+                Object {
+                  "Actors": "Charlie Hunnam, Katey Sagal, Mark Boone Junior, Kim Coates",
+                  "Awards": "Won 1 Golden Globe. Another 10 wins & 55 nominations.",
+                  "Country": "USA",
+                  "Director": "N/A",
+                  "Genre": Array [
+                    "Crime",
+                    "Drama",
+                    "Thriller",
+                  ],
+                  "Language": "English",
+                  "Metascore": "N/A",
+                  "Plot": "A biker struggles to balance being a father and being involved in an outlaw motorcycle club.",
+                  "Poster": "https://m.media-amazon.com/images/M/MV5BMTEyODg2NzkwMDBeQTJeQWpwZ15BbWU4MDQwODI3MzIx._V1_SX300.jpg",
+                  "Rated": "TV-MA",
+                  "Ratings": Array [
+                    Object {
+                      "Source": "Internet Movie Database",
+                      "Value": "8.6/10",
+                    },
+                  ],
+                  "Released": "03 Sep 2008",
+                  "Runtime": "45 min",
+                  "Title": "Sons of Anarchy",
+                  "Type": "series",
+                  "Writer": "Kurt Sutter",
+                  "Year": "2008–2014",
+                  "imdbID": "tt1124373",
+                  "imdbRating": "8.6",
+                  "imdbVotes": "236,312",
+                  "totalSeasons": "7",
+                  "trailerURL": "_03DBXL3Srw",
+                },
+                Object {
+                  "Actors": "Hugh Laurie, Omar Epps, Robert Sean Leonard, Jesse Spencer",
+                  "Awards": "Won 2 Golden Globes. Another 54 wins & 131 nominations.",
+                  "Country": "USA",
+                  "Director": "N/A",
+                  "Genre": Array [
+                    "Drama",
+                    "Mystery",
+                  ],
+                  "Language": "English",
+                  "Metascore": "N/A",
+                  "Plot": "An antisocial maverick doctor who specializes in diagnostic medicine does whatever it takes to solve puzzling cases that come his way using his crack team of doctors and his wits.",
+                  "Poster": "https://m.media-amazon.com/images/M/MV5BMDA4NjQzN2ItZDhhNC00ZjVlLWFjNTgtMTEyNDQyOGNjMDE1XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg",
+                  "Rated": "TV-14",
+                  "Ratings": Array [
+                    Object {
+                      "Source": "Internet Movie Database",
+                      "Value": "8.7/10",
+                    },
+                  ],
+                  "Released": "16 Nov 2004",
+                  "Runtime": "44 min",
+                  "Title": "House",
+                  "Type": "series",
+                  "Writer": "David Shore",
+                  "Year": "2004–2012",
+                  "imdbID": "tt0412142",
+                  "imdbRating": "8.7",
+                  "imdbVotes": "385,806",
+                  "totalSeasons": "8",
+                  "trailerURL": "MczMB8nU1sY",
+                },
+                Object {
+                  "Actors": "Benedict Cumberbatch, Chiwetel Ejiofor, Rachel McAdams, Benedict Wong",
+                  "Awards": "Nominated for 1 Oscar. Another 20 wins & 64 nominations.",
+                  "BoxOffice": "$232,630,718",
+                  "Country": "USA",
+                  "DVD": "28 Feb 2017",
+                  "Director": "Scott Derrickson",
+                  "Genre": Array [
+                    "Action",
+                    "Adventure",
+                    "Fantasy",
+                    "Sci-Fi",
+                  ],
+                  "Language": "English",
+                  "Metascore": "72",
+                  "Plot": "While on a journey of physical and spiritual healing, a brilliant neurosurgeon is drawn into the world of the mystic arts.",
+                  "Poster": "https://m.media-amazon.com/images/M/MV5BNjgwNzAzNjk1Nl5BMl5BanBnXkFtZTgwMzQ2NjI1OTE@._V1_SX300.jpg",
+                  "Production": "Walt Disney Pictures",
+                  "Rated": "PG-13",
+                  "Ratings": Array [
+                    Object {
+                      "Source": "Internet Movie Database",
+                      "Value": "7.5/10",
+                    },
+                    Object {
+                      "Source": "Rotten Tomatoes",
+                      "Value": "89%",
+                    },
+                    Object {
+                      "Source": "Metacritic",
+                      "Value": "72/100",
+                    },
+                  ],
+                  "Released": "04 Nov 2016",
+                  "Runtime": "115 min",
+                  "Title": "Doctor Strange",
+                  "Type": "movie",
+                  "Website": "N/A",
+                  "Writer": "Jon Spaihts, Scott Derrickson, C. Robert Cargill, Stan Lee (based on the Marvel comics by), Steve Ditko (based on the Marvel comics by)",
+                  "Year": "2016",
+                  "imdbID": "tt1211837",
+                  "imdbRating": "7.5",
+                  "imdbVotes": "538,895",
+                  "trailerURL": "Lt-U_t2pUHI",
+                },
+              ]
+            }
+            disableVirtualization={false}
+            getItem={[Function]}
+            getItemCount={[Function]}
+            horizontal={false}
+            initialNumToRender={10}
+            keyExtractor={[Function]}
+            maxToRenderPerBatch={10}
+            numColumns={1}
+            onContentSizeChange={[Function]}
+            onEndReachedThreshold={2}
+            onLayout={[Function]}
+            onMomentumScrollEnd={[Function]}
+            onScroll={[Function]}
+            onScrollBeginDrag={[Function]}
+            onScrollEndDrag={[Function]}
+            overScrollMode="never"
+            removeClippedSubviews={false}
+            renderItem={[Function]}
+            scrollEventThrottle={50}
+            stickyHeaderIndices={Array []}
+            updateCellsBatchingPeriod={50}
+            viewabilityConfigCallbackPairs={Array []}
+            windowSize={21}
+          >
+            <View>
+              <View
+                onLayout={[Function]}
+                style={null}
+              >
+                <View
+                  accessible={true}
+                  focusable={true}
+                  isTVSelectable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "backgroundColor": "#1c1c1c",
+                      "borderRadius": 4,
+                      "flexDirection": "row",
+                      "height": 80,
+                      "marginBottom": 10,
+                      "marginLeft": 25,
+                      "marginRight": 25,
+                      "marginTop": 10,
+                      "opacity": 1,
+                      "overflow": "hidden",
+                    }
+                  }
+                >
+                  <Image
+                    source={
+                      Object {
+                        "uri": "https://m.media-amazon.com/images/M/MV5BNzlkNzVjMDMtOTdhZC00MGE1LTkxODctMzFmMjkwZmMxZjFhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+                      }
+                    }
+                    style={
+                      Array [
+                        Object {
+                          "height": "100%",
+                          "width": 100,
+                        },
+                      ]
+                    }
+                  />
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "flexBasis": 0,
+                          "flexDirection": "column",
+                          "flexGrow": 1,
+                          "flexShrink": 1,
+                          "justifyContent": "center",
+                          "marginLeft": 10,
+                        },
+                      ]
+                    }
+                  >
+                    <Text
+                      numberOfLines={3}
+                      style={
+                        Array [
+                          Object {
+                            "color": "#fff",
+                            "fontSize": 16,
+                            "fontWeight": "bold",
+                            "marginBottom": 5,
+                          },
+                        ]
+                      }
+                    >
+                      The Fast and the Furious
+                    </Text>
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "rgba(255, 255, 255, 0.4)",
+                            "fontSize": 12,
+                          },
+                        ]
+                      }
+                    >
+                      22 Jun 2001
+                    </Text>
+                  </View>
+                  <View
+                    accessible={true}
+                    focusable={false}
+                    isTVSelectable={true}
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      Array [
+                        Object {
+                          "overflow": "hidden",
+                        },
+                        Object {
+                          "backgroundColor": "transparent",
+                          "borderRadius": 0,
+                        },
+                      ]
+                    }
+                  >
+                    <View
+                      style={
+                        Array [
+                          Object {
+                            "alignItems": "center",
+                            "flexDirection": "row",
+                            "justifyContent": "flex-start",
+                            "padding": 8,
+                          },
+                          Object {
+                            "backgroundColor": "transparent",
+                            "borderRadius": 0,
+                          },
+                          Array [
+                            Object {},
+                          ],
+                        ]
+                      }
+                    >
+                      <Text
+                        allowFontScaling={false}
+                        style={
+                          Array [
+                            Object {
+                              "color": "#D7240F",
+                              "fontSize": 30,
+                            },
+                            Object {
+                              "marginRight": 10,
+                            },
+                            Object {
+                              "fontFamily": "Material Design Icons",
+                              "fontStyle": "normal",
+                              "fontWeight": "normal",
+                            },
+                            Object {},
+                          ]
+                        }
+                      >
+                        
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View
+                onLayout={[Function]}
+                style={null}
+              >
+                <View
+                  accessible={true}
+                  focusable={true}
+                  isTVSelectable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "backgroundColor": "#1c1c1c",
+                      "borderRadius": 4,
+                      "flexDirection": "row",
+                      "height": 80,
+                      "marginBottom": 10,
+                      "marginLeft": 25,
+                      "marginRight": 25,
+                      "marginTop": 10,
+                      "opacity": 1,
+                      "overflow": "hidden",
+                    }
+                  }
+                >
+                  <Image
+                    source={
+                      Object {
+                        "uri": "https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+                      }
+                    }
+                    style={
+                      Array [
+                        Object {
+                          "height": "100%",
+                          "width": 100,
+                        },
+                      ]
+                    }
+                  />
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "flexBasis": 0,
+                          "flexDirection": "column",
+                          "flexGrow": 1,
+                          "flexShrink": 1,
+                          "justifyContent": "center",
+                          "marginLeft": 10,
+                        },
+                      ]
+                    }
+                  >
+                    <Text
+                      numberOfLines={3}
+                      style={
+                        Array [
+                          Object {
+                            "color": "#fff",
+                            "fontSize": 16,
+                            "fontWeight": "bold",
+                            "marginBottom": 5,
+                          },
+                        ]
+                      }
+                    >
+                      Star Wars: Episode IV - A New Hope
+                    </Text>
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "rgba(255, 255, 255, 0.4)",
+                            "fontSize": 12,
+                          },
+                        ]
+                      }
+                    >
+                      25 May 1977
+                    </Text>
+                  </View>
+                  <View
+                    accessible={true}
+                    focusable={false}
+                    isTVSelectable={true}
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      Array [
+                        Object {
+                          "overflow": "hidden",
+                        },
+                        Object {
+                          "backgroundColor": "transparent",
+                          "borderRadius": 0,
+                        },
+                      ]
+                    }
+                  >
+                    <View
+                      style={
+                        Array [
+                          Object {
+                            "alignItems": "center",
+                            "flexDirection": "row",
+                            "justifyContent": "flex-start",
+                            "padding": 8,
+                          },
+                          Object {
+                            "backgroundColor": "transparent",
+                            "borderRadius": 0,
+                          },
+                          Array [
+                            Object {},
+                          ],
+                        ]
+                      }
+                    >
+                      <Text
+                        allowFontScaling={false}
+                        style={
+                          Array [
+                            Object {
+                              "color": "#D7240F",
+                              "fontSize": 30,
+                            },
+                            Object {
+                              "marginRight": 10,
+                            },
+                            Object {
+                              "fontFamily": "Material Design Icons",
+                              "fontStyle": "normal",
+                              "fontWeight": "normal",
+                            },
+                            Object {},
+                          ]
+                        }
+                      >
+                        
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View
+                onLayout={[Function]}
+                style={null}
+              >
+                <View
+                  accessible={true}
+                  focusable={true}
+                  isTVSelectable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "backgroundColor": "#1c1c1c",
+                      "borderRadius": 4,
+                      "flexDirection": "row",
+                      "height": 80,
+                      "marginBottom": 10,
+                      "marginLeft": 25,
+                      "marginRight": 25,
+                      "marginTop": 10,
+                      "opacity": 1,
+                      "overflow": "hidden",
+                    }
+                  }
+                >
+                  <Image
+                    source={
+                      Object {
+                        "uri": "https://m.media-amazon.com/images/M/MV5BMTEyODg2NzkwMDBeQTJeQWpwZ15BbWU4MDQwODI3MzIx._V1_SX300.jpg",
+                      }
+                    }
+                    style={
+                      Array [
+                        Object {
+                          "height": "100%",
+                          "width": 100,
+                        },
+                      ]
+                    }
+                  />
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "flexBasis": 0,
+                          "flexDirection": "column",
+                          "flexGrow": 1,
+                          "flexShrink": 1,
+                          "justifyContent": "center",
+                          "marginLeft": 10,
+                        },
+                      ]
+                    }
+                  >
+                    <Text
+                      numberOfLines={3}
+                      style={
+                        Array [
+                          Object {
+                            "color": "#fff",
+                            "fontSize": 16,
+                            "fontWeight": "bold",
+                            "marginBottom": 5,
+                          },
+                        ]
+                      }
+                    >
+                      Sons of Anarchy
+                    </Text>
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "rgba(255, 255, 255, 0.4)",
+                            "fontSize": 12,
+                          },
+                        ]
+                      }
+                    >
+                      03 Sep 2008
+                    </Text>
+                  </View>
+                  <View
+                    accessible={true}
+                    focusable={false}
+                    isTVSelectable={true}
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      Array [
+                        Object {
+                          "overflow": "hidden",
+                        },
+                        Object {
+                          "backgroundColor": "transparent",
+                          "borderRadius": 0,
+                        },
+                      ]
+                    }
+                  >
+                    <View
+                      style={
+                        Array [
+                          Object {
+                            "alignItems": "center",
+                            "flexDirection": "row",
+                            "justifyContent": "flex-start",
+                            "padding": 8,
+                          },
+                          Object {
+                            "backgroundColor": "transparent",
+                            "borderRadius": 0,
+                          },
+                          Array [
+                            Object {},
+                          ],
+                        ]
+                      }
+                    >
+                      <Text
+                        allowFontScaling={false}
+                        style={
+                          Array [
+                            Object {
+                              "color": "#D7240F",
+                              "fontSize": 30,
+                            },
+                            Object {
+                              "marginRight": 10,
+                            },
+                            Object {
+                              "fontFamily": "Material Design Icons",
+                              "fontStyle": "normal",
+                              "fontWeight": "normal",
+                            },
+                            Object {},
+                          ]
+                        }
+                      >
+                        
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View
+                onLayout={[Function]}
+                style={null}
+              >
+                <View
+                  accessible={true}
+                  focusable={true}
+                  isTVSelectable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "backgroundColor": "#1c1c1c",
+                      "borderRadius": 4,
+                      "flexDirection": "row",
+                      "height": 80,
+                      "marginBottom": 10,
+                      "marginLeft": 25,
+                      "marginRight": 25,
+                      "marginTop": 10,
+                      "opacity": 1,
+                      "overflow": "hidden",
+                    }
+                  }
+                >
+                  <Image
+                    source={
+                      Object {
+                        "uri": "https://m.media-amazon.com/images/M/MV5BMDA4NjQzN2ItZDhhNC00ZjVlLWFjNTgtMTEyNDQyOGNjMDE1XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg",
+                      }
+                    }
+                    style={
+                      Array [
+                        Object {
+                          "height": "100%",
+                          "width": 100,
+                        },
+                      ]
+                    }
+                  />
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "flexBasis": 0,
+                          "flexDirection": "column",
+                          "flexGrow": 1,
+                          "flexShrink": 1,
+                          "justifyContent": "center",
+                          "marginLeft": 10,
+                        },
+                      ]
+                    }
+                  >
+                    <Text
+                      numberOfLines={3}
+                      style={
+                        Array [
+                          Object {
+                            "color": "#fff",
+                            "fontSize": 16,
+                            "fontWeight": "bold",
+                            "marginBottom": 5,
+                          },
+                        ]
+                      }
+                    >
+                      House
+                    </Text>
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "rgba(255, 255, 255, 0.4)",
+                            "fontSize": 12,
+                          },
+                        ]
+                      }
+                    >
+                      16 Nov 2004
+                    </Text>
+                  </View>
+                  <View
+                    accessible={true}
+                    focusable={false}
+                    isTVSelectable={true}
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      Array [
+                        Object {
+                          "overflow": "hidden",
+                        },
+                        Object {
+                          "backgroundColor": "transparent",
+                          "borderRadius": 0,
+                        },
+                      ]
+                    }
+                  >
+                    <View
+                      style={
+                        Array [
+                          Object {
+                            "alignItems": "center",
+                            "flexDirection": "row",
+                            "justifyContent": "flex-start",
+                            "padding": 8,
+                          },
+                          Object {
+                            "backgroundColor": "transparent",
+                            "borderRadius": 0,
+                          },
+                          Array [
+                            Object {},
+                          ],
+                        ]
+                      }
+                    >
+                      <Text
+                        allowFontScaling={false}
+                        style={
+                          Array [
+                            Object {
+                              "color": "#D7240F",
+                              "fontSize": 30,
+                            },
+                            Object {
+                              "marginRight": 10,
+                            },
+                            Object {
+                              "fontFamily": "Material Design Icons",
+                              "fontStyle": "normal",
+                              "fontWeight": "normal",
+                            },
+                            Object {},
+                          ]
+                        }
+                      >
+                        
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View
+                onLayout={[Function]}
+                style={null}
+              >
+                <View
+                  accessible={true}
+                  focusable={true}
+                  isTVSelectable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "backgroundColor": "#1c1c1c",
+                      "borderRadius": 4,
+                      "flexDirection": "row",
+                      "height": 80,
+                      "marginBottom": 10,
+                      "marginLeft": 25,
+                      "marginRight": 25,
+                      "marginTop": 10,
+                      "opacity": 1,
+                      "overflow": "hidden",
+                    }
+                  }
+                >
+                  <Image
+                    source={
+                      Object {
+                        "uri": "https://m.media-amazon.com/images/M/MV5BNjgwNzAzNjk1Nl5BMl5BanBnXkFtZTgwMzQ2NjI1OTE@._V1_SX300.jpg",
+                      }
+                    }
+                    style={
+                      Array [
+                        Object {
+                          "height": "100%",
+                          "width": 100,
+                        },
+                      ]
+                    }
+                  />
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "flexBasis": 0,
+                          "flexDirection": "column",
+                          "flexGrow": 1,
+                          "flexShrink": 1,
+                          "justifyContent": "center",
+                          "marginLeft": 10,
+                        },
+                      ]
+                    }
+                  >
+                    <Text
+                      numberOfLines={3}
+                      style={
+                        Array [
+                          Object {
+                            "color": "#fff",
+                            "fontSize": 16,
+                            "fontWeight": "bold",
+                            "marginBottom": 5,
+                          },
+                        ]
+                      }
+                    >
+                      Doctor Strange
+                    </Text>
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "rgba(255, 255, 255, 0.4)",
+                            "fontSize": 12,
+                          },
+                        ]
+                      }
+                    >
+                      04 Nov 2016
+                    </Text>
+                  </View>
+                  <View
+                    accessible={true}
+                    focusable={false}
+                    isTVSelectable={true}
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      Array [
+                        Object {
+                          "overflow": "hidden",
+                        },
+                        Object {
+                          "backgroundColor": "transparent",
+                          "borderRadius": 0,
+                        },
+                      ]
+                    }
+                  >
+                    <View
+                      style={
+                        Array [
+                          Object {
+                            "alignItems": "center",
+                            "flexDirection": "row",
+                            "justifyContent": "flex-start",
+                            "padding": 8,
+                          },
+                          Object {
+                            "backgroundColor": "transparent",
+                            "borderRadius": 0,
+                          },
+                          Array [
+                            Object {},
+                          ],
+                        ]
+                      }
+                    >
+                      <Text
+                        allowFontScaling={false}
+                        style={
+                          Array [
+                            Object {
+                              "color": "#D7240F",
+                              "fontSize": 30,
+                            },
+                            Object {
+                              "marginRight": 10,
+                            },
+                            Object {
+                              "fontFamily": "Material Design Icons",
+                              "fontStyle": "normal",
+                              "fontWeight": "normal",
+                            },
+                            Object {},
+                          ]
+                        }
+                      >
+                        
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </RCTScrollView>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`renders correctly TredingComponent 1`] = `
+<RCTScrollView
+  data={Object {}}
+  disableVirtualization={false}
+  getItem={[Function]}
+  getItemCount={[Function]}
+  horizontal={true}
+  initialNumToRender={10}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={10}
+  numColumns={1}
+  onContentSizeChange={[Function]}
+  onEndReachedThreshold={2}
+  onLayout={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  overScrollMode="never"
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  showsHorizontalScrollIndicator={false}
+  stickyHeaderIndices={Array []}
+  updateCellsBatchingPeriod={50}
+  viewabilityConfigCallbackPairs={Array []}
+  windowSize={21}
+>
+  <View />
+</RCTScrollView>
+`;

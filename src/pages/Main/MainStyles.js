@@ -6,7 +6,7 @@ import LOGO from '~/assets/img/Netflix_Logo.png';
 export const Container = styled.View`
   width: 100%;
   height: 100%;
-  background-color: ${props => props.theme.background};
+  background-color: #111111;
 `;
 
 export const Header = styled.View`
@@ -48,7 +48,7 @@ export const Title = styled.Text`
 
 export const ButtonText = styled.Text`
   font-size: 12px;
-  color: ${props => props.theme.primary};
+  color: #d7240f;
   margin: 0px 25px 15px 25px;
 `;
 

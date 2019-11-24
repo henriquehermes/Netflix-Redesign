@@ -2,7 +2,7 @@ import styled from 'styled-components/native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 export const Container = styled.View`
-  background-color: ${props => props.theme.background};
+  background-color: #111111;
   height: 100%;
 `;
 
@@ -49,7 +49,7 @@ export const Description = styled.View`
 `;
 
 export const MovieType = styled.Text`
-  color: ${props => props.theme.primary};
+  color: #d7240f;
   font-size: 12px;
   text-transform: capitalize;
 `;
@@ -83,7 +83,7 @@ export const MovieAge = styled.Text`
 `;
 
 export const MovieMatch = styled.Text`
-  color: ${props => props.theme.highlight};
+  color: #1abd32;
   font-size: 14px;
   margin-right: 20px;
 `;

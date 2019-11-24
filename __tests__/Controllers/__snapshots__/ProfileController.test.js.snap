@@ -1,0 +1,269 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#111111",
+        "height": "100%",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "height": 70,
+          "paddingBottom": 10,
+          "paddingLeft": 15,
+          "paddingRight": 15,
+          "paddingTop": 10,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      isTVSelectable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Object {
+            "backgroundColor": "transparent",
+            "borderRadius": 0,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "flex-start",
+              "padding": 8,
+            },
+            Object {
+              "backgroundColor": "transparent",
+              "borderRadius": 0,
+            },
+            Array [
+              Object {},
+            ],
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "white",
+                "fontSize": 20,
+              },
+              Object {
+                "marginRight": 10,
+              },
+              Object {
+                "fontFamily": "Material Design Icons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          
+        </Text>
+      </View>
+    </View>
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../src/assets/img/Netflix_Logo.png",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "height": 65,
+            "width": 100,
+          },
+        ]
+      }
+    />
+  </View>
+  <RCTScrollView
+    overScrollMode="never"
+    style={
+      Array [
+        Object {},
+      ]
+    }
+  >
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "column",
+              "paddingBottom": 15,
+              "paddingLeft": 25,
+              "paddingRight": 25,
+              "paddingTop": 15,
+              "width": "100%",
+            },
+          ]
+        }
+      >
+        <Image
+          resizeMode="contain"
+          source={
+            Object {
+              "uri": undefined,
+            }
+          }
+          style={
+            Array [
+              Object {
+                "borderRadius": 10,
+                "height": 100,
+                "marginBottom": 40,
+                "width": 150,
+              },
+            ]
+          }
+        />
+        <TextInput
+          allowFontScaling={true}
+          editable={false}
+          placeHolder="Name"
+          placeholderTextColor="rgba(255,255,255,0.2)"
+          rejectResponderTermination={true}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#1c1c1c",
+                "borderColor": "#1c1c1c",
+                "borderRadius": 4,
+                "borderStyle": "solid",
+                "borderWidth": 2,
+                "color": "rgba(255, 255, 255, 0.87)",
+                "fontSize": 14,
+                "marginBottom": 10,
+                "maxWidth": 300,
+                "paddingBottom": 5,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 5,
+                "width": "100%",
+              },
+            ]
+          }
+          underlineColorAndroid="transparent"
+        />
+        <TextInput
+          allowFontScaling={true}
+          editable={false}
+          placeHolder="Email"
+          placeholderTextColor="rgba(255,255,255,0.2)"
+          rejectResponderTermination={true}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#1c1c1c",
+                "borderColor": "#1c1c1c",
+                "borderRadius": 4,
+                "borderStyle": "solid",
+                "borderWidth": 2,
+                "color": "rgba(255, 255, 255, 0.87)",
+                "fontSize": 14,
+                "marginBottom": 10,
+                "maxWidth": 300,
+                "paddingBottom": 5,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "paddingTop": 5,
+                "width": "100%",
+              },
+            ]
+          }
+          underlineColorAndroid="transparent"
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#fff",
+                "fontSize": 18,
+                "marginBottom": 15,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 15,
+              },
+            ]
+          }
+        >
+          Last 5 movies watched
+        </Text>
+        <View
+          style={
+            Array [
+              Object {
+                "width": "100%",
+              },
+            ]
+          }
+        >
+          <RCTScrollView
+            disableVirtualization={false}
+            getItem={[Function]}
+            getItemCount={[Function]}
+            horizontal={false}
+            initialNumToRender={10}
+            keyExtractor={[Function]}
+            maxToRenderPerBatch={10}
+            numColumns={1}
+            onContentSizeChange={[Function]}
+            onEndReachedThreshold={2}
+            onLayout={[Function]}
+            onMomentumScrollEnd={[Function]}
+            onScroll={[Function]}
+            onScrollBeginDrag={[Function]}
+            onScrollEndDrag={[Function]}
+            overScrollMode="never"
+            removeClippedSubviews={false}
+            renderItem={[Function]}
+            scrollEventThrottle={50}
+            stickyHeaderIndices={Array []}
+            updateCellsBatchingPeriod={50}
+            viewabilityConfigCallbackPairs={Array []}
+            windowSize={21}
+          >
+            <View />
+          </RCTScrollView>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

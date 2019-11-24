@@ -21,6 +21,7 @@ export default function TrendingComponent({ data, navigation }) {
         <Slide
           firstIndex={index === 0}
           lastIndex={index === data.length - 1}
+          testID="SlideClick"
           onPress={() => openDetail(item)}>
           <MovieImage
             source={{

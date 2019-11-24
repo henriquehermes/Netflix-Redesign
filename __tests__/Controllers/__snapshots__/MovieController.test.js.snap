@@ -1,0 +1,586 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#111111",
+        "height": "100%",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "height": 50,
+          "paddingBottom": 10,
+          "paddingLeft": 15,
+          "paddingRight": 15,
+          "paddingTop": 10,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      isTVSelectable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Object {
+            "backgroundColor": "transparent",
+            "borderRadius": 0,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "flex-start",
+              "padding": 8,
+            },
+            Object {
+              "backgroundColor": "transparent",
+              "borderRadius": 0,
+            },
+            Array [
+              Object {},
+            ],
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "white",
+                "fontSize": 20,
+              },
+              Object {
+                "marginRight": 10,
+              },
+              Object {
+                "fontFamily": "Material Design Icons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          
+        </Text>
+      </View>
+    </View>
+  </View>
+  <RCTScrollView
+    overScrollMode="never"
+    style={
+      Array [
+        Object {},
+      ]
+    }
+  >
+    <View>
+      <Image
+        resizeMode="contain"
+        source={
+          Object {
+            "uri": "https://m.media-amazon.com/images/M/MV5BNDYxOTU0NDYtYzg2MC00YzgyLTg1YzctMDc1MGJmOGIzMTc3XkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_SX300.jpg",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "height": 200,
+              "width": "100%",
+            },
+          ]
+        }
+      />
+      <Image
+        blurRadius={10}
+        resizeMode="stretch"
+        source={
+          Object {
+            "uri": "https://m.media-amazon.com/images/M/MV5BNDYxOTU0NDYtYzg2MC00YzgyLTg1YzctMDc1MGJmOGIzMTc3XkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_SX300.jpg",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "height": 200,
+              "position": "absolute",
+              "width": "100%",
+              "zIndex": -999,
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "rgba(0, 0, 0, 0.5)",
+              "justifyContent": "center",
+              "marginBottom": 15,
+              "marginLeft": 25,
+              "marginRight": 25,
+              "marginTop": 15,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#d7240f",
+                "fontSize": 12,
+                "textTransform": "capitalize",
+              },
+            ]
+          }
+        >
+          series
+           - 
+          Crime
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#fff",
+                "fontSize": 24,
+                "fontWeight": "bold",
+              },
+            ]
+          }
+        >
+          Riverdale
+        </Text>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "justifyContent": "flex-start",
+                "marginBottom": 5,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 5,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#1abd32",
+                  "fontSize": 14,
+                  "marginRight": 20,
+                },
+              ]
+            }
+          >
+            IMDB 
+            7.2
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "rgba(255, 255, 255, 0.5)",
+                  "fontSize": 14,
+                  "marginRight": 20,
+                },
+              ]
+            }
+          >
+            2017–
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "borderColor": "rgba(255, 255, 255, 0.5)",
+                  "borderRadius": 4,
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                  "color": "rgba(255, 255, 255, 0.5)",
+                  "fontSize": 12,
+                  "paddingBottom": 0,
+                  "paddingLeft": 6,
+                  "paddingRight": 6,
+                  "paddingTop": 0,
+                },
+              ]
+            }
+          >
+            TV-14
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+              "marginHorizontal": 25,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "rgba(255, 255, 255, 0.1)",
+                "borderRadius": 4,
+                "height": 30,
+                "justifyContent": "center",
+                "marginBottom": 10,
+                "marginRight": 10,
+                "paddingBottom": 5,
+                "paddingLeft": 15,
+                "paddingRight": 15,
+                "paddingTop": 5,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "rgba(255, 255, 255, 0.4)",
+                  "fontSize": 11,
+                },
+              ]
+            }
+          >
+            Crime
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "rgba(255, 255, 255, 0.1)",
+                "borderRadius": 4,
+                "height": 30,
+                "justifyContent": "center",
+                "marginBottom": 10,
+                "marginRight": 10,
+                "paddingBottom": 5,
+                "paddingLeft": 15,
+                "paddingRight": 15,
+                "paddingTop": 5,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "rgba(255, 255, 255, 0.4)",
+                  "fontSize": 11,
+                },
+              ]
+            }
+          >
+            Drama
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "rgba(255, 255, 255, 0.1)",
+                "borderRadius": 4,
+                "height": 30,
+                "justifyContent": "center",
+                "marginBottom": 10,
+                "marginRight": 10,
+                "paddingBottom": 5,
+                "paddingLeft": 15,
+                "paddingRight": 15,
+                "paddingTop": 5,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "rgba(255, 255, 255, 0.4)",
+                  "fontSize": 11,
+                },
+              ]
+            }
+          >
+            Mystery
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "rgba(255, 255, 255, 0.1)",
+                "borderRadius": 4,
+                "height": 30,
+                "justifyContent": "center",
+                "marginBottom": 10,
+                "marginRight": 10,
+                "paddingBottom": 5,
+                "paddingLeft": 15,
+                "paddingRight": 15,
+                "paddingTop": 5,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "rgba(255, 255, 255, 0.4)",
+                  "fontSize": 11,
+                },
+              ]
+            }
+          >
+            Romance
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "flex-start",
+              "marginBottom": 10,
+              "marginLeft": 25,
+              "marginRight": 25,
+              "marginTop": 10,
+            },
+          ]
+        }
+      >
+        <View
+          accessible={true}
+          focusable={true}
+          isTVSelectable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#d7240f",
+              "borderRadius": 4,
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "minHeight": 40,
+              "minWidth": 100,
+              "opacity": 1,
+              "width": 150,
+            }
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "#Fff",
+                  "fontSize": 20,
+                },
+                Object {
+                  "marginRight": 5,
+                },
+                Object {
+                  "fontFamily": "Material Design Icons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                Object {},
+              ]
+            }
+          >
+            
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#fff",
+                  "fontSize": 12,
+                  "fontWeight": "600",
+                  "textTransform": "uppercase",
+                },
+              ]
+            }
+          >
+            Watch Trailer
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "flex-start",
+              "flexDirection": "column",
+              "justifyContent": "flex-start",
+              "marginBottom": 10,
+              "marginLeft": 25,
+              "marginRight": 25,
+              "marginTop": 10,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#fff",
+                "fontSize": 18,
+              },
+            ]
+          }
+        >
+          About
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "rgba(255, 255, 255, 0.4)",
+                "fontSize": 12,
+                "marginBottom": 15,
+              },
+            ]
+          }
+        >
+          While navigating the troubled waters of romance, school and family, Archie and his gang become entangled in dark Riverdale mysteries.
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#fff",
+                "fontSize": 18,
+              },
+            ]
+          }
+        >
+          Actors
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "rgba(255, 255, 255, 0.4)",
+                "fontSize": 12,
+                "marginBottom": 15,
+              },
+            ]
+          }
+        >
+          K.J. Apa, Lili Reinhart, Camila Mendes, Cole Sprouse
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#fff",
+                "fontSize": 18,
+              },
+            ]
+          }
+        >
+          Director
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "rgba(255, 255, 255, 0.4)",
+                "fontSize": 12,
+                "marginBottom": 15,
+              },
+            ]
+          }
+        >
+          N/A
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#fff",
+                "fontSize": 18,
+              },
+            ]
+          }
+        >
+          Writer
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "rgba(255, 255, 255, 0.4)",
+                "fontSize": 12,
+                "marginBottom": 15,
+              },
+            ]
+          }
+        >
+          Roberto Aguirre-Sacasa
+        </Text>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

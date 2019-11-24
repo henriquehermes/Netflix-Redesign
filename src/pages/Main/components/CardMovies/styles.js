@@ -23,14 +23,14 @@ export const MovieImage = styled.Image.attrs({
 `;
 
 export const Description = styled.View`
-  background-color: ${props => props.theme.backgroundSecondary};
+  background-color: rgba(255, 255, 255, 0.1);
   justify-content: center;
   padding: 5px 10px;
   height: 60px;
 `;
 
 export const MovieType = styled.Text`
-  color: ${props => props.theme.primary};
+  color: #d7240f;
   font-size: 10px;
   text-transform: capitalize;
 `;
