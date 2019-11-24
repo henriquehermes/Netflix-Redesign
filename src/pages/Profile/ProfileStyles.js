@@ -56,15 +56,6 @@ export const Title = styled.Text`
   margin: 15px 0px;
 `;
 
-export const MovieAvatar = styled.Image.attrs({
-  resizeMode: 'contain',
-})`
-  align-items: center;
-  height: 50px;
-  width: 50px;
-  border-radius: 4px;
-  margin: 4px;
-  flex-basis: 0;
-  flex-grow: 1;
-  padding: 40px;
+export const CardView = styled.View`
+  width: 100%;
 `;

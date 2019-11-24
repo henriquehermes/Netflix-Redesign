@@ -12,7 +12,7 @@
           "Rated": "PG-13",
           "Released": "22 Jun 2001",
           "Runtime": "106 min",
-          "Genre": "Action, Crime, Thriller",
+          "Genre": ["Action", "Crime", "Thriller"],
           "Director": "Rob Cohen",
           "Writer": "Ken Li (magazine article \"Racer X\"), Gary Scott Thompson (screen story), Gary Scott Thompson (screenplay), Erik Bergquist (screenplay), David Ayer (screenplay)",
           "Actors": "Paul Walker, Vin Diesel, Michelle Rodriguez, Jordana Brewster",
@@ -30,7 +30,7 @@
           "imdbRating": "6.8",
           "imdbVotes": "327,163",
           "imdbID": "tt0232500",
-          "Type": "movie",
+          "Type": "Movie - Action",
           "DVD": "01 Jan 2002",
           "BoxOffice": "$142,542,950",
           "Production": "Universal Pictures",
@@ -44,7 +44,7 @@
           "Rated": "PG",
           "Released": "25 May 1977",
           "Runtime": "121 min",
-          "Genre": "Action, Adventure, Fantasy, Sci-Fi",
+          "Genre": ["Action", "Adventure", "Fantasy", "Sci-Fi"],
           "Director": "George Lucas",
           "Writer": "George Lucas",
           "Actors": "Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing",
@@ -67,7 +67,7 @@
           "BoxOffice": "N/A",
           "Production": "20th Century Fox",
           "Website": "N/A",
-          "trailerURL": "2TAOizOnNPo"
+          "trailerURL": "vZ734NWnAHA"
         },
 
         {
@@ -76,7 +76,7 @@
           "Rated": "TV-MA",
           "Released": "03 Sep 2008",
           "Runtime": "45 min",
-          "Genre": "Crime, Drama, Thriller",
+          "Genre": ["Crime", "Drama", "Thriller"],
           "Director": "N/A",
           "Writer": "Kurt Sutter",
           "Actors": "Charlie Hunnam, Katey Sagal, Mark Boone Junior, Kim Coates",
@@ -94,7 +94,7 @@
           "imdbID": "tt1124373",
           "Type": "series",
           "totalSeasons": "7",
-          "trailerURL": "2TAOizOnNPo"
+          "trailerURL": "_03DBXL3Srw"
         },
 
         {
@@ -103,7 +103,7 @@
           "Rated": "TV-14",
           "Released": "16 Nov 2004",
           "Runtime": "44 min",
-          "Genre": "Drama, Mystery",
+          "Genre": ["Drama", "Mystery"],
           "Director": "N/A",
           "Writer": "David Shore",
           "Actors": "Hugh Laurie, Omar Epps, Robert Sean Leonard, Jesse Spencer",
@@ -121,7 +121,7 @@
           "imdbID": "tt0412142",
           "Type": "series",
           "totalSeasons": "8",
-          "trailerURL": "2TAOizOnNPo"
+          "trailerURL": "MczMB8nU1sY"
         },
         {
           "Title": "Doctor Strange",
@@ -129,7 +129,7 @@
           "Rated": "PG-13",
           "Released": "04 Nov 2016",
           "Runtime": "115 min",
-          "Genre": "Action, Adventure, Fantasy, Sci-Fi",
+          "Genre": ["Action", "Adventure", "Fantasy", "Sci-Fi"],
           "Director": "Scott Derrickson",
           "Writer": "Jon Spaihts, Scott Derrickson, C. Robert Cargill, Stan Lee (based on the Marvel comics by), Steve Ditko (based on the Marvel comics by)",
           "Actors": "Benedict Cumberbatch, Chiwetel Ejiofor, Rachel McAdams, Benedict Wong",
@@ -152,7 +152,7 @@
           "BoxOffice": "$232,630,718",
           "Production": "Walt Disney Pictures",
           "Website": "N/A",
-          "trailerURL": "2TAOizOnNPo"
+          "trailerURL": "Lt-U_t2pUHI"
         }
       ]
     },
@@ -252,7 +252,7 @@
           "Rated": "TV-14",
           "Released": "16 Nov 2004",
           "Runtime": "44 min",
-          "Genre": "Drama, Mystery",
+          "Genre": ["Drama", "Mystery"],
           "Director": "N/A",
           "Writer": "David Shore",
           "Actors": "Hugh Laurie, Omar Epps, Robert Sean Leonard, Jesse Spencer",
@@ -270,7 +270,7 @@
           "imdbID": "tt0412142",
           "Type": "series",
           "totalSeasons": "8",
-          "trailerURL": "2TAOizOnNPo"
+          "trailerURL": "MczMB8nU1sY"
         },
         {
           "Title": "Doctor Strange",
@@ -278,7 +278,7 @@
           "Rated": "PG-13",
           "Released": "04 Nov 2016",
           "Runtime": "115 min",
-          "Genre": "Action, Adventure, Fantasy, Sci-Fi",
+          "Genre": ["Action", "Adventure", "Fantasy", "Sci-Fi"],
           "Director": "Scott Derrickson",
           "Writer": "Jon Spaihts, Scott Derrickson, C. Robert Cargill, Stan Lee (based on the Marvel comics by), Steve Ditko (based on the Marvel comics by)",
           "Actors": "Benedict Cumberbatch, Chiwetel Ejiofor, Rachel McAdams, Benedict Wong",
@@ -301,7 +301,7 @@
           "BoxOffice": "$232,630,718",
           "Production": "Walt Disney Pictures",
           "Website": "N/A",
-          "trailerURL": "2TAOizOnNPo"
+          "trailerURL": "Lt-U_t2pUHI"
         }
       ]
     }
