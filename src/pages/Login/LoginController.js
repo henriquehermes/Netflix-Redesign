@@ -1,25 +1,21 @@
 import React, { useState } from 'react';
-import AsyncStorage from '@react-native-community/async-storage';
 import { showMessage } from 'react-native-flash-message';
 
+import postLogin from '~/services/LoginServices';
 import LoginComponent from './LoginComponent';
-import USERS from '~/config/users.json';
 
 export default function LoginController({ navigation }) {
   const [isLoading, setIsLoading] = useState(false);
 
   async function login(email, password) {
     setIsLoading(true);
-    if (email === 'marcela@email.com' && password === '123') {
-      await AsyncStorage.setItem('User', JSON.stringify(USERS.list[0]));
+    const response = await postLogin(email, password);
+
+    if (response) {
       navigation.navigate('AppNavigator');
       return;
     }
-    if (email === 'ian@email.com' && password === '123') {
-      await AsyncStorage.setItem('User', JSON.stringify(USERS.list[1]));
-      navigation.navigate('AppNavigator');
-      return;
-    }
+
     setIsLoading(false);
     showMessage({
       message: 'Error',
