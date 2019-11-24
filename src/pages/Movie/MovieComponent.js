@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import YouTube from 'react-native-youtube';
+import { useSelector } from 'react-redux';
 
 import {
   Container,
@@ -19,6 +20,7 @@ import {
   Title,
   TitleDescription,
   LikeButton,
+  ImageBlur,
 } from './MovieStyles';
 
 import Genre from './components/Genre';
@@ -26,6 +28,7 @@ import Button from '~/components/Button';
 
 export default function MovieComponent({ navigation }) {
   const [videoPlayer, setVideoPlayer] = useState(false);
+  const detailMovie = useSelector(state => state.movie.detail);
 
   return (
     <Container>
@@ -35,55 +38,52 @@ export default function MovieComponent({ navigation }) {
       <Body overScrollMode="never">
         <MovieImage
           source={{
-            uri:
-              'https://www.calltheone.com/storage/blog/2/2018/09/19/the-defenders_orig.jpeg',
+            uri: detailMovie.Poster,
+          }}
+        />
+        <ImageBlur
+          blurRadius={10}
+          source={{
+            uri: detailMovie.Poster,
           }}
         />
         <Description>
-          <MovieType>Movie - Action</MovieType>
-          <MovieTitle>Marvels The Defenders</MovieTitle>
+          <MovieType>
+            {detailMovie.Type} - {detailMovie.Genre[0]}
+          </MovieType>
+          <MovieTitle>{detailMovie.Title}</MovieTitle>
           <Row>
-            <MovieMatch>98% Match</MovieMatch>
-            <MovieYear>2017</MovieYear>
-            <MovieAge>16+</MovieAge>
+            <MovieMatch>IMDB {detailMovie.imdbRating}</MovieMatch>
+            <MovieYear>{detailMovie.Year}</MovieYear>
+            <MovieAge>{detailMovie.Rated}</MovieAge>
           </Row>
         </Description>
-        <Genre />
+        <Genre data={detailMovie.Genre} />
         <RowButtons>
           <Button
             label="Watch Trailer"
             image
             imageName="play"
             style={{ width: 150 }}
-            onPress={() => setVideoPlayer(true)}
+            onPress={() => setVideoPlayer(detailMovie.trailerURL)}
           />
           <LikeButton />
         </RowButtons>
         <About>
           <Title>About</Title>
-          <TitleDescription>
-            Los Angeles police officer Brian OConner must decide where his
-            loyalty really lies when he becomes enamored with the street racing
-            world he has been sent undercover to destroy.
-          </TitleDescription>
+          <TitleDescription>{detailMovie.Plot}</TitleDescription>
           <Title>Actors</Title>
-          <TitleDescription>
-            Paul Walker, Vin Diesel, Michelle Rodriguez, Jordana Brewster
-          </TitleDescription>
+          <TitleDescription>{detailMovie.Actors}</TitleDescription>
           <Title>Director</Title>
-          <TitleDescription>Rob Cohen</TitleDescription>
+          <TitleDescription>{detailMovie.Director}</TitleDescription>
           <Title>Writer</Title>
-          <TitleDescription>
-            Ken Li (magazine article Racer X), Gary Scott Thompson (screen
-            story), Gary Scott Thompson (screenplay), Erik Bergquist
-            (screenplay), David Ayer (screenplay)
-          </TitleDescription>
+          <TitleDescription>{detailMovie.Writer}</TitleDescription>
         </About>
       </Body>
       {videoPlayer && (
         <YouTube
           apiKey="AIzaSyC57p-gNzW9D7fTcV16zwwyshuoJFBxtGE"
-          videoId="ndl1W4ltcmg"
+          videoId={videoPlayer}
           play
           fullscreen
           style={{ alignSelf: 'stretch', height: '100%' }}

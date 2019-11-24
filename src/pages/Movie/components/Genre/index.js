@@ -2,27 +2,12 @@ import React from 'react';
 
 import { GenreView, GenreText, Grid } from './styles';
 
-const DATA = [
-  {
-    name: 'Action',
-  },
-  {
-    name: 'SuperHero',
-  },
-  {
-    name: 'Comedy',
-  },
-  {
-    name: 'Comedy',
-  },
-];
-
-const Genre = () => {
+const Genre = ({ data }) => {
   return (
     <Grid>
-      {DATA.map(item => (
+      {data.map(item => (
         <GenreView>
-          <GenreText>{item.name}</GenreText>
+          <GenreText>{item}</GenreText>
         </GenreView>
       ))}
     </Grid>

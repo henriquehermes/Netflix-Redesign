@@ -29,6 +29,13 @@ export const MovieImage = styled.Image.attrs({ resizeMode: 'contain' })`
   width: 100%;
 `;
 
+export const ImageBlur = styled.Image.attrs({ resizeMode: 'stretch' })`
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  z-index: -999;
+`;
+
 export const MovieTitle = styled.Text`
   color: #fff;
   font-size: 24px;
@@ -44,6 +51,7 @@ export const Description = styled.View`
 export const MovieType = styled.Text`
   color: ${props => props.theme.primary};
   font-size: 12px;
+  text-transform: capitalize;
 `;
 
 export const Row = styled.View`
